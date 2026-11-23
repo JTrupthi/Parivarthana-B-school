@@ -178,9 +178,9 @@ const TAPCellPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA]">
+    <div className="min-h-screen bg-[#f8f9fa]">
       {/* Hero Section */}
-      <section className="relative bg-[#0D225C] text-white py-20">
+      <section className="relative bg-[#2e3192] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Training & Placement Cell</h1>
@@ -196,7 +196,7 @@ const TAPCellPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-[#0D225C] mb-6">About the Training and Placement Cell (TAP)</h2>
+              <h2 className="text-4xl font-bold text-[#2e3192] mb-6">About the Training and Placement Cell (TAP)</h2>
               <p className="text-lg text-[#747488] mb-6 leading-relaxed">
                 At Parivarthana Business School, the Training and Placement Cell (TAP) plays a pivotal role in 
                 shaping the career paths of students by preparing them for a dynamic and competitive professional world. 
@@ -220,7 +220,7 @@ const TAPCellPage: React.FC = () => {
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
-                <div className="text-3xl font-bold text-[#0D225C]">30+</div>
+                <div className="text-3xl font-bold text-[#2e3192]">30+</div>
                 <div className="text-sm text-[#747488]">Partner Companies</div>
               </div>
             </div>
@@ -229,10 +229,10 @@ const TAPCellPage: React.FC = () => {
       </section>
 
       {/* Key Highlights */}
-      <section className="py-20 bg-[#F0F0EA]">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Key Highlights</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Key Highlights</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Comprehensive training and development programs to ensure student success
             </p>
@@ -241,17 +241,17 @@ const TAPCellPage: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {keyHighlights.map((highlight, index) => (
               <div key={index} className="text-center bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="inline-flex items-center justify-center w-14 h-14 bg-[#CCB156] rounded-lg mb-4">
+                <div className="inline-flex items-center justify-center w-14 h-14 bg-[#fdb913] rounded-lg mb-4">
                   <highlight.icon className="h-7 w-7 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-[#0D225C] mb-3">{highlight.title}</h4>
+                <h4 className="text-xl font-bold text-[#2e3192] mb-3">{highlight.title}</h4>
                 <p className="text-[#747488] leading-relaxed">{highlight.description}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-16 bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6 text-center">Placement Support with 30+ Companies</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6 text-center">Placement Support with 30+ Companies</h3>
             <p className="text-lg text-[#747488] text-center leading-relaxed">
               The TAP Cell has established strong relationships with over 30 leading companies across diverse sectors. 
               Each year, numerous recruiters visit our campus, offering both internship and final placement opportunities. 
@@ -262,7 +262,7 @@ const TAPCellPage: React.FC = () => {
       </section>
 
       {/* Placement Statistics */}
-      <section className="py-20 bg-[#0D225C] text-white">
+      <section className="py-20 bg-[#2e3192] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Placement Statistics</h2>
@@ -274,7 +274,7 @@ const TAPCellPage: React.FC = () => {
           <div className="grid md:grid-cols-4 gap-8">
             {placementStats.map((stat, index) => (
               <div key={index} className="text-center bg-white/10 rounded-xl p-6">
-                <div className="text-4xl font-bold text-[#CCB156] mb-2">{stat.value}</div>
+                <div className="text-4xl font-bold text-[#fdb913] mb-2">{stat.value}</div>
                 <div className="text-gray-300">{stat.label}</div>
               </div>
             ))}
@@ -286,22 +286,22 @@ const TAPCellPage: React.FC = () => {
       <section id="invite-to-recruiter" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Placement Officer's Message to Recruiters</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Placement Officer's Message to Recruiters</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Partner with us to recruit talented and skilled graduates
             </p>
           </div>
 
-          <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg">
             <div className="grid lg:grid-cols-3 gap-8 items-center mb-8">
               <div className="text-center">
                 <img
                   src={placementOfficer.image}
                   alt={placementOfficer.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-[#CCB156]"
+                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-[#fdb913]"
                 />
-                <h3 className="text-xl font-bold text-[#0D225C] mb-2">{placementOfficer.name}</h3>
-                <p className="text-[#CCB156] font-semibold">{placementOfficer.designation}</p>
+                <h3 className="text-xl font-bold text-[#2e3192] mb-2">{placementOfficer.name}</h3>
+                <p className="text-[#fdb913] font-semibold">{placementOfficer.designation}</p>
               </div>
               
               <div className="lg:col-span-2">
@@ -327,7 +327,7 @@ const TAPCellPage: React.FC = () => {
 
             {/* Recruitment Registration Form */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-6 text-center">Recruitment Registration Form</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-6 text-center">Recruitment Registration Form</h3>
 
               <div className="w-full flex justify-center">
                 <iframe
@@ -348,10 +348,10 @@ const TAPCellPage: React.FC = () => {
       </section>
 
       {/* Facilities for Campus Hiring */}
-      <section id="facilities-for-campus-hiring" className="py-20 bg-[#F0F0EA]">
+      <section id="facilities-for-campus-hiring" className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Facilities for Campus Hiring</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Facilities for Campus Hiring</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               State-of-the-art infrastructure to support seamless campus recruitment
             </p>
@@ -360,12 +360,12 @@ const TAPCellPage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {facilities.map((facility, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h3 className="text-xl font-bold text-[#0D225C] mb-4">{facility.title}</h3>
+                <h3 className="text-xl font-bold text-[#2e3192] mb-4">{facility.title}</h3>
                 <p className="text-[#747488] mb-4 leading-relaxed">{facility.description}</p>
                 <div className="space-y-2">
                   {facility.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-[#CCB156]" />
+                      <CheckCircle className="h-4 w-4 text-[#fdb913]" />
                       <span className="text-[#747488] text-sm">{feature}</span>
                     </div>
                   ))}
@@ -380,14 +380,14 @@ const TAPCellPage: React.FC = () => {
       <section id="placement-regulations" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Placement Regulations</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Placement Regulations</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Guidelines and regulations governing the placement process
             </p>
           </div>
 
-          <div className="bg-[#F0F0EA] rounded-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Objective</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Objective</h3>
             <p className="text-lg text-[#747488] leading-relaxed">
               The objective of the Training and Placement Cell (TAP) is to facilitate meaningful career opportunities 
               for students and build strong industry-academia partnerships. These placement regulations aim to maintain 
@@ -397,12 +397,12 @@ const TAPCellPage: React.FC = () => {
 
           <div className="space-y-8">
             {regulations.map((regulation, index) => (
-              <div key={index} className="bg-[#F0F0EA] rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-[#0D225C] mb-6">{regulation.category}</h3>
+              <div key={index} className="bg-[#f8f9fa] rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-[#2e3192] mb-6">{regulation.category}</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   {regulation.rules.map((rule, ruleIndex) => (
                     <div key={ruleIndex} className="flex items-start space-x-3 bg-white p-4 rounded-lg">
-                      <CheckCircle className="h-5 w-5 text-[#CCB156] flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="h-5 w-5 text-[#fdb913] flex-shrink-0 mt-0.5" />
                       <span className="text-[#747488] text-sm leading-relaxed">{rule}</span>
                     </div>
                   ))}
@@ -428,10 +428,10 @@ const TAPCellPage: React.FC = () => {
       </section>
 
       {/* Placement Reports */}
-      <section id="placement-report" className="py-20 bg-[#F0F0EA]">
+      <section id="placement-report" className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Placement Report 2024-25</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Placement Report 2024-25</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Comprehensive placement statistics and achievements for the academic year 2024-25
             </p>
@@ -439,10 +439,10 @@ const TAPCellPage: React.FC = () => {
 
           {/* Overall Statistics */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6 text-center">Overall Placement Statistics</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6 text-center">Overall Placement Statistics</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
-                <thead className="bg-[#0D225C] text-white">
+                <thead className="bg-[#2e3192] text-white">
                   <tr>
                     <th className="px-6 py-4 text-left font-semibold">Branch</th>
                     <th className="px-6 py-4 text-center font-semibold">Total Students</th>
@@ -455,14 +455,14 @@ const TAPCellPage: React.FC = () => {
                 </thead>
                 <tbody>
                   {placementData.map((data, index) => (
-                    <tr key={index} className="border-b border-gray-200 hover:bg-[#F0F0EA] transition-colors">
-                      <td className="px-6 py-4 font-semibold text-[#0D225C]">{data.branch}</td>
+                    <tr key={index} className="border-b border-gray-200 hover:bg-[#f8f9fa] transition-colors">
+                      <td className="px-6 py-4 font-semibold text-[#2e3192]">{data.branch}</td>
                       <td className="px-6 py-4 text-center text-[#747488]">{data.totalStudents}</td>
                       <td className="px-6 py-4 text-center text-[#747488]">{data.totalOffers}</td>
                       <td className="px-6 py-4 text-center text-[#747488]">{data.individualOffers}</td>
-                      <td className="px-6 py-4 text-center text-[#CCB156] font-bold">₹{data.highestCTC}</td>
+                      <td className="px-6 py-4 text-center text-[#fdb913] font-bold">₹{data.highestCTC}</td>
                       <td className="px-6 py-4 text-center text-[#747488]">₹{data.lowestCTC}</td>
-                      <td className="px-6 py-4 text-center text-[#CCB156] font-bold">₹{data.averageCTC}</td>
+                      <td className="px-6 py-4 text-center text-[#fdb913] font-bold">₹{data.averageCTC}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -472,10 +472,10 @@ const TAPCellPage: React.FC = () => {
 
           {/* Course Wise Placement Statistics */}
           <div className="bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6 text-center">Course Wise Placement Statistics 2024-25</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6 text-center">Course Wise Placement Statistics 2024-25</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
-                <thead className="bg-[#CCB156] text-[#0D225C]">
+                <thead className="bg-[#fdb913] text-[#2e3192]">
                   <tr>
                     <th className="px-6 py-4 text-left font-semibold">Placed Company</th>
                     <th className="px-6 py-4 text-center font-semibold">Package Offered (LPA)</th>
@@ -485,9 +485,9 @@ const TAPCellPage: React.FC = () => {
                 </thead>
                 <tbody>
                   {companyPlacements.map((placement, index) => (
-                    <tr key={index} className="border-b border-gray-200 hover:bg-[#F0F0EA] transition-colors">
-                      <td className="px-6 py-4 font-medium text-[#0D225C]">{placement.company}</td>
-                      <td className="px-6 py-4 text-center text-[#CCB156] font-bold">₹{placement.package}</td>
+                    <tr key={index} className="border-b border-gray-200 hover:bg-[#f8f9fa] transition-colors">
+                      <td className="px-6 py-4 font-medium text-[#2e3192]">{placement.company}</td>
+                      <td className="px-6 py-4 text-center text-[#fdb913] font-bold">₹{placement.package}</td>
                       <td className="px-6 py-4 text-center text-[#747488]">{placement.mba || '-'}</td>
                       <td className="px-6 py-4 text-center text-[#747488]">{placement.mca || '-'}</td>
                     </tr>
@@ -503,7 +503,7 @@ const TAPCellPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Placement Process</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Placement Process</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Our structured placement process ensures fair and transparent selection
             </p>
@@ -511,14 +511,14 @@ const TAPCellPage: React.FC = () => {
 
           <div className="space-y-8">
             {placementProcess.map((step, index) => (
-              <div key={index} className="bg-[#F0F0EA] rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+              <div key={index} className="bg-[#f8f9fa] rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-[#CCB156] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="bg-[#fdb913] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold">{step.step}</span>
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                      <h3 className="text-xl font-bold text-[#0D225C]">{step.title}</h3>
+                      <h3 className="text-xl font-bold text-[#2e3192]">{step.title}</h3>
                       <div className="flex items-center space-x-2 text-[#747488]">
                         <Clock className="h-4 w-4" />
                         <span className="text-sm">{step.duration}</span>
@@ -534,10 +534,10 @@ const TAPCellPage: React.FC = () => {
       </section>
 
       {/* Contact TAP Cell */}
-      <section id="contact-us" className="py-20 bg-[#F0F0EA]">
+      <section id="contact-us" className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Contact TAP Cell</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Contact TAP Cell</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Get in touch with our placement team for career guidance and opportunities
             </p>
@@ -549,58 +549,58 @@ const TAPCellPage: React.FC = () => {
                 <img
                   src={placementOfficer.image}
                   alt={placementOfficer.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-[#CCB156]"
+                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-[#fdb913]"
                 />
-                <h3 className="text-xl font-bold text-[#0D225C] mb-2">{placementOfficer.name}</h3>
-                <p className="text-[#CCB156] font-semibold mb-4">{placementOfficer.designation}</p>
+                <h3 className="text-xl font-bold text-[#2e3192] mb-2">{placementOfficer.name}</h3>
+                <p className="text-[#fdb913] font-semibold mb-4">{placementOfficer.designation}</p>
               </div>
               
               <div className="lg:col-span-2">
-                <h4 className="text-xl font-bold text-[#0D225C] mb-4">Professional Highlights</h4>
+                <h4 className="text-xl font-bold text-[#2e3192] mb-4">Professional Highlights</h4>
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <div className="space-y-3">
                     <div>
-                      <span className="font-semibold text-[#0D225C] text-sm">Qualification: </span>
+                      <span className="font-semibold text-[#2e3192] text-sm">Qualification: </span>
                       <span className="text-[#747488] text-sm">{placementOfficer.qualification}</span>
                     </div>
                     <div>
-                      <span className="font-semibold text-[#0D225C] text-sm">Experience: </span>
+                      <span className="font-semibold text-[#2e3192] text-sm">Experience: </span>
                       <span className="text-[#747488] text-sm">{placementOfficer.experience}</span>
                     </div>
                   </div>
                   <div className="space-y-3">
                     <div>
-                      <span className="font-semibold text-[#0D225C] text-sm">Specialization: </span>
+                      <span className="font-semibold text-[#2e3192] text-sm">Specialization: </span>
                       <span className="text-[#747488] text-sm">{placementOfficer.specialization}</span>
                     </div>
                     <div>
-                      <span className="font-semibold text-[#0D225C] text-sm">PG Specialization: </span>
+                      <span className="font-semibold text-[#2e3192] text-sm">PG Specialization: </span>
                       <span className="text-[#747488] text-sm">{placementOfficer.pgSpecialization}</span>
                     </div>
                   </div>
                 </div>
                 
-                <div className="bg-[#F0F0EA] p-4 rounded-lg">
-                  <h5 className="font-semibold text-[#0D225C] mb-2">Certification:</h5>
+                <div className="bg-[#f8f9fa] p-4 rounded-lg">
+                  <h5 className="font-semibold text-[#2e3192] mb-2">Certification:</h5>
                   <p className="text-[#747488] text-sm">{placementOfficer.eligibility}</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 grid md:grid-cols-2 gap-8">
-              <div className="text-center bg-[#F0F0EA] rounded-xl p-8">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#0D225C] rounded-full mb-6">
+              <div className="text-center bg-[#f8f9fa] rounded-xl p-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#2e3192] rounded-full mb-6">
                   <Phone className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0D225C] mb-4">Phone</h3>
+                <h3 className="text-xl font-bold text-[#2e3192] mb-4">Phone</h3>
                 <p className="text-[#747488] text-lg font-semibold">{placementOfficer.phone}</p>
               </div>
 
-              <div className="text-center bg-[#F0F0EA] rounded-xl p-8">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#CCB156] rounded-full mb-6">
+              <div className="text-center bg-[#f8f9fa] rounded-xl p-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#fdb913] rounded-full mb-6">
                   <Mail className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0D225C] mb-4">Email</h3>
+                <h3 className="text-xl font-bold text-[#2e3192] mb-4">Email</h3>
                 <p className="text-[#747488] text-lg font-semibold">{placementOfficer.email}</p>
               </div>
             </div>

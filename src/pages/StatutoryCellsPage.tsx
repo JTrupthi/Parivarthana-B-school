@@ -103,9 +103,9 @@ const StatutoryCellsPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA]">
+    <div className="min-h-screen bg-[#f8f9fa]">
       {/* Hero Section */}
-      <section className="bg-[#0D225C] text-white py-20">
+      <section className="bg-[#2e3192] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Statutory Cells</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
@@ -118,40 +118,40 @@ const StatutoryCellsPage: React.FC = () => {
       <section id="grievance-redressal" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-8">
-            <div className="bg-[#0D225C] p-4 rounded-lg">
+            <div className="bg-[#2e3192] p-4 rounded-lg">
               <FileText className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">
               Grievance Redressal Cell
             </h2>
           </div>
 
           {/* Introduction */}
-          <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Purpose & Principles</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Purpose & Principles</h3>
 
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-2">Purpose</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-2">Purpose</h4>
                 <p className="text-[#747488] leading-relaxed">
                   The Grievance Redressal Cell is established to address concerns and complaints from students, faculty, and staff regarding academic issues, infrastructure, behavioral matters, administrative concerns, or other legitimate grievances.
                 </p>
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-2">Core Principles</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-2">Core Principles</h4>
                 <div className="grid md:grid-cols-4 gap-4">
                   {['Transparency', 'Fairness', 'Timely Resolution', 'Confidentiality'].map((principle, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg text-center">
                       <CheckCircle className="h-6 w-6 text-green-600 mx-auto mb-2" />
-                      <p className="text-[#0D225C] font-semibold">{principle}</p>
+                      <p className="text-[#2e3192] font-semibold">{principle}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-2">Process</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-2">Process</h4>
                 <p className="text-[#747488] leading-relaxed">
                   Submit grievances via the Grievance Registration Form below. Forms can be submitted physically or placed in the designated grievance box on campus.
                 </p>
@@ -161,7 +161,7 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Grievance Registration Form */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Grievance Registration Form</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Grievance Registration Form</h3>
 
             <div className="w-full flex justify-center">
               <iframe
@@ -180,12 +180,12 @@ const StatutoryCellsPage: React.FC = () => {
           </div>
 
           {/* Committee Composition */}
-          <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Committee Composition</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Committee Composition</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-[#0D225C] text-white">
+                  <tr className="bg-[#2e3192] text-white">
                     <th className="px-6 py-3 text-left">Members</th>
                     <th className="px-6 py-3 text-left">Designations</th>
                   </tr>
@@ -205,31 +205,31 @@ const StatutoryCellsPage: React.FC = () => {
       </section>
 
       {/* Anti-Ragging Committee */}
-      <section id="anti-ragging" className="py-20 bg-[#F0F0EA]">
+      <section id="anti-ragging" className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-8">
             <div className="bg-red-600 p-4 rounded-lg">
               <AlertTriangle className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">
               Anti-Ragging Committee
             </h2>
           </div>
 
           {/* Introduction */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Introduction</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Introduction</h3>
 
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-2">Purpose</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-2">Purpose</h4>
                 <p className="text-[#747488] leading-relaxed">
                   To ensure a ragging-free environment in strict compliance with UGC Regulations on Curbing the Menace of Ragging in Higher Educational Institutions, 2009.
                 </p>
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-2">Mandate</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-2">Mandate</h4>
                 <p className="text-[#747488] leading-relaxed">
                   The committee is mandated to supervise, prevent, and address ragging incidents through proactive measures and stringent action against offenders.
                 </p>
@@ -239,7 +239,7 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Objectives */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Objectives</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Objectives</h3>
             <div className="space-y-3">
               {[
                 'Raise awareness about the dehumanizing effects of ragging and its consequences',
@@ -258,10 +258,10 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Punishable Ingredients */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Punishable Ingredients of Ragging</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Punishable Ingredients of Ragging</h3>
             <div className="grid md:grid-cols-2 gap-4">
               {raggingPunishableActions.map((action, index) => (
-                <div key={index} className="flex items-start space-x-3 bg-[#F0F0EA] p-3 rounded-lg">
+                <div key={index} className="flex items-start space-x-3 bg-[#f8f9fa] p-3 rounded-lg">
                   <XCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
                   <span className="text-[#747488] text-sm">{action}</span>
                 </div>
@@ -271,7 +271,7 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Punishments */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Punishments for Ragging</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Punishments for Ragging</h3>
             <div className="space-y-3">
               {raggingPunishments.map((punishment, index) => (
                 <div key={index} className="flex items-start space-x-3 bg-red-50 p-4 rounded-lg">
@@ -286,7 +286,7 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Responsibilities */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Committee Responsibilities</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Committee Responsibilities</h3>
             <div className="space-y-3">
               {antiRaggingResponsibilities.map((responsibility, index) => (
                 <div key={index} className="flex items-start space-x-3">
@@ -299,7 +299,7 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Committee Composition */}
           <div className="bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Committee Composition</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Committee Composition</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
@@ -310,7 +310,7 @@ const StatutoryCellsPage: React.FC = () => {
                 </thead>
                 <tbody>
                   {antiRaggingCommittee.map((member, index) => (
-                    <tr key={index} className="border-b border-gray-200 bg-[#F0F0EA]">
+                    <tr key={index} className="border-b border-gray-200 bg-[#f8f9fa]">
                       <td className="px-6 py-4 text-[#747488]">{member.member}</td>
                       <td className="px-6 py-4 text-[#747488]">{member.designation}</td>
                     </tr>
@@ -329,25 +329,25 @@ const StatutoryCellsPage: React.FC = () => {
             <div className="bg-pink-600 p-4 rounded-lg">
               <Heart className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">
               Women's S.A.F.E Cell
             </h2>
           </div>
 
           {/* Introduction */}
-          <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Introduction</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Introduction</h3>
 
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-2">Purpose</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-2">Purpose</h4>
                 <p className="text-[#747488] leading-relaxed">
                   The Women's S.A.F.E (Sexual harassment Awareness and Fair Environment) Cell is established to ensure a sexual harassment-free environment and to address complaints of sexual harassment in compliance with applicable laws and Supreme Court directives.
                 </p>
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-2">Mandate</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-2">Mandate</h4>
                 <p className="text-[#747488] leading-relaxed">
                   To promote gender sensitization, equality, and create a safe and respectful environment for all members of the institution.
                 </p>
@@ -357,7 +357,7 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Punishable Ingredients */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8 border-2 border-pink-200">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Punishable Ingredients of Sexual Harassment</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Punishable Ingredients of Sexual Harassment</h3>
             <div className="grid md:grid-cols-2 gap-4">
               {harassmentPunishableActions.map((action, index) => (
                 <div key={index} className="flex items-start space-x-3 bg-pink-50 p-3 rounded-lg">
@@ -370,11 +370,11 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Punishments */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8 border-2 border-pink-200">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Punishments for Sexual Harassment</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Punishments for Sexual Harassment</h3>
 
             <div className="space-y-6">
               <div>
-                <h4 className="text-xl font-semibold text-[#0D225C] mb-4">For Employees</h4>
+                <h4 className="text-xl font-semibold text-[#2e3192] mb-4">For Employees</h4>
                 <div className="space-y-3">
                   {[
                     'Written apology with an undertaking',
@@ -393,7 +393,7 @@ const StatutoryCellsPage: React.FC = () => {
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-[#0D225C] mb-4">For Students</h4>
+                <h4 className="text-xl font-semibold text-[#2e3192] mb-4">For Students</h4>
                 <div className="space-y-3">
                   {[
                     'Withholding privileges and academic benefits',
@@ -414,8 +414,8 @@ const StatutoryCellsPage: React.FC = () => {
           </div>
 
           {/* Responsibilities */}
-          <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Committee Responsibilities</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Committee Responsibilities</h3>
             <div className="space-y-3">
               {safeResponsibilities.map((responsibility, index) => (
                 <div key={index} className="flex items-start space-x-3">
@@ -428,7 +428,7 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Committee Composition */}
           <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-pink-200">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Committee Composition</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Committee Composition</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
@@ -452,31 +452,31 @@ const StatutoryCellsPage: React.FC = () => {
       </section>
 
       {/* Disciplinary Committee */}
-      <section id="disciplinary" className="py-20 bg-[#F0F0EA]">
+      <section id="disciplinary" className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-8">
-            <div className="bg-[#CCB156] p-4 rounded-lg">
+            <div className="bg-[#fdb913] p-4 rounded-lg">
               <Gavel className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">
               Disciplinary Committee
             </h2>
           </div>
 
           {/* Introduction */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Introduction</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Introduction</h3>
 
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-2">Purpose</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-2">Purpose</h4>
                 <p className="text-[#747488] leading-relaxed">
                   The Disciplinary Committee is established to maintain discipline, uphold institutional values, and ensure a positive learning environment for all students, faculty, and staff.
                 </p>
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-2">Scope</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-2">Scope</h4>
                 <p className="text-[#747488] leading-relaxed">
                   The committee addresses misconduct including but not limited to rule violations, disruptive behavior, harassment, damage to property, and criminal behavior on campus.
                 </p>
@@ -486,26 +486,26 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Process */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Disciplinary Process</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Disciplinary Process</h3>
 
             <div className="space-y-6">
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-3">Investigation & Inquiry</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-3">Investigation & Inquiry</h4>
                 <p className="text-[#747488] leading-relaxed mb-4">
                   The committee conducts fair and impartial inquiries into reported incidents of misconduct. Evidence is gathered through:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                   {['Witness Statements', 'Physical Evidence', 'CCTV Verification'].map((method, index) => (
-                    <div key={index} className="bg-[#F0F0EA] p-4 rounded-lg text-center">
-                      <Shield className="h-6 w-6 text-[#CCB156] mx-auto mb-2" />
-                      <p className="text-[#0D225C] font-semibold text-sm">{method}</p>
+                    <div key={index} className="bg-[#f8f9fa] p-4 rounded-lg text-center">
+                      <Shield className="h-6 w-6 text-[#fdb913] mx-auto mb-2" />
+                      <p className="text-[#2e3192] font-semibold text-sm">{method}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#0D225C] mb-3">Disciplinary Actions</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-3">Disciplinary Actions</h4>
                 <p className="text-[#747488] leading-relaxed mb-4">
                   Based on the severity of misconduct, the committee may recommend the following actions:
                 </p>
@@ -516,8 +516,8 @@ const StatutoryCellsPage: React.FC = () => {
                     'Suspension - Temporary suspension from classes and campus activities',
                     'Expulsion - Permanent removal from the institution for serious offenses',
                   ].map((action, index) => (
-                    <div key={index} className="flex items-start space-x-3 bg-[#F0F0EA] p-4 rounded-lg">
-                      <div className="bg-[#CCB156] text-white w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">
+                    <div key={index} className="flex items-start space-x-3 bg-[#f8f9fa] p-4 rounded-lg">
+                      <div className="bg-[#fdb913] text-white w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">
                         {index + 1}
                       </div>
                       <span className="text-[#747488]">{action}</span>
@@ -530,18 +530,18 @@ const StatutoryCellsPage: React.FC = () => {
 
           {/* Committee Composition */}
           <div className="bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Committee Composition</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Committee Composition</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-[#CCB156] text-white">
+                  <tr className="bg-[#fdb913] text-white">
                     <th className="px-6 py-3 text-left">Members</th>
                     <th className="px-6 py-3 text-left">Designations</th>
                   </tr>
                 </thead>
                 <tbody>
                   {disciplinaryCommittee.map((member, index) => (
-                    <tr key={index} className="border-b border-gray-200 bg-[#F0F0EA]">
+                    <tr key={index} className="border-b border-gray-200 bg-[#f8f9fa]">
                       <td className="px-6 py-4 text-[#747488]">{member.member}</td>
                       <td className="px-6 py-4 text-[#747488]">{member.designation}</td>
                     </tr>
@@ -554,28 +554,28 @@ const StatutoryCellsPage: React.FC = () => {
       </section>
 
       {/* SC/ST Cell */}
-      <section id="sc-st-cell" className="py-20 bg-[#F0F0EA]">
+      <section id="sc-st-cell" className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-8">
-            <div className="bg-[#0D225C] p-4 rounded-lg">
+            <div className="bg-[#2e3192] p-4 rounded-lg">
               <Shield className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">
               SC/ST Cell
             </h2>
           </div>
 
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8 border border-gray-100">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Purpose</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Purpose</h3>
             <p className="text-[#747488] leading-relaxed mb-6">
               The SC/ST Cell is established to empower students belonging to the SC/ST communities, ensuring equal opportunities, and facilitating financial support (scholarships). It functions as a grievance redressal mechanism for matters of discrimination.
             </p>
 
             <div className="mb-6">
-              <h4 className="font-semibold text-[#0D225C] mb-4">Committee Members</h4>
+              <h4 className="font-semibold text-[#2e3192] mb-4">Committee Members</h4>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left">
-                  <thead className="text-xs uppercase bg-[#0D225C] text-white">
+                  <thead className="text-xs uppercase bg-[#2e3192] text-white">
                     <tr>
                       <th className="px-6 py-3 text-left">Members</th>
                       <th className="px-6 py-3 text-left">Designations</th>
@@ -583,7 +583,7 @@ const StatutoryCellsPage: React.FC = () => {
                   </thead>
                   <tbody>
                     {stCommittee.map((member, index) => (
-                      <tr key={index} className="border-b border-gray-200 bg-[#F0F0EA]">
+                      <tr key={index} className="border-b border-gray-200 bg-[#f8f9fa]">
                         <td className="px-6 py-4 text-[#747488]">{member.member}</td>
                         <td className="px-6 py-4 text-[#747488]">{member.designation}</td>
                       </tr>
@@ -600,25 +600,25 @@ const StatutoryCellsPage: React.FC = () => {
       <section id="human-rights" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-8">
-            <div className="bg-[#0D225C] p-4 rounded-lg">
+            <div className="bg-[#2e3192] p-4 rounded-lg">
               <Heart className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">
               Human Rights Committee
             </h2>
           </div>
 
-          <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg border border-gray-100">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Overview</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg border border-gray-100">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Overview</h3>
             <p className="text-[#747488] leading-relaxed mb-6">
               The Human Rights cell is constituted to promote and preserve human rights in the campus. The main focus of the cell is to implement human rights through effective institutional policy development, capability building, and control of human rights violations.
             </p>
 
             <div className="mb-6">
-              <h4 className="font-semibold text-[#0D225C] mb-4">Committee Members</h4>
+              <h4 className="font-semibold text-[#2e3192] mb-4">Committee Members</h4>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left">
-                  <thead className="text-xs uppercase bg-[#0D225C] text-white">
+                  <thead className="text-xs uppercase bg-[#2e3192] text-white">
                     <tr>
                       <th className="px-6 py-3 text-left">Members</th>
                       <th className="px-6 py-3 text-left">Designations</th>
@@ -640,19 +640,19 @@ const StatutoryCellsPage: React.FC = () => {
       </section>
 
       {/* Feedback Forum */}
-<section id="feedback-forum" className="py-20 bg-[#F0F0EA]">
+<section id="feedback-forum" className="py-20 bg-[#f8f9fa]">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex items-center space-x-4 mb-8">
-      <div className="bg-[#0D225C] p-4 rounded-lg">
+      <div className="bg-[#2e3192] p-4 rounded-lg">
         <Users className="h-8 w-8 text-white" />
       </div>
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">
         Feedback Forum
       </h2>
     </div>
 
-    <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg mb-8">
-      <h3 className="text-2xl font-bold text-[#0D225C] mb-6">
+    <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg mb-8">
+      <h3 className="text-2xl font-bold text-[#2e3192] mb-6">
         Faculty Feedback Form
       </h3>
       <div className="w-full flex justify-center">
@@ -671,8 +671,8 @@ const StatutoryCellsPage: React.FC = () => {
       </div>
     </div>
 
-    <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg">
-      <h3 className="text-2xl font-bold text-[#0D225C] mb-6">
+    <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg">
+      <h3 className="text-2xl font-bold text-[#2e3192] mb-6">
         Student Feedback Form
       </h3>
       <div className="w-full flex justify-center">

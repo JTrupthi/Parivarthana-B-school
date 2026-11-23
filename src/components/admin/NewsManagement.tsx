@@ -218,20 +218,20 @@ const NewsManagement: React.FC = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-bold text-[#0D225C]">News & Announcements</h2>
+          <h2 className="text-2xl font-bold text-[#2e3192]">News & Announcements</h2>
           <p className="text-[#747488]">Manage news posts and blog imports</p>
         </div>
         <div className="flex space-x-3">
           <button
             onClick={() => { resetForm(); setShowModal(true); }}
-            className="flex items-center space-x-2 bg-[#0D225C] text-white px-4 py-2 rounded-lg hover:bg-[#0D225C]/90 transition-colors"
+            className="flex items-center space-x-2 bg-[#2e3192] text-white px-4 py-2 rounded-lg hover:bg-[#2e3192]/90 transition-colors"
           >
             <Plus className="h-4 w-4" />
             <span>Add Post</span>
           </button>
           <button
             onClick={refresh}
-            className="flex items-center space-x-2 bg-white text-[#0D225C] px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
+            className="flex items-center space-x-2 bg-white text-[#2e3192] px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
           >
             <RefreshCw className="h-4 w-4" />
             <span>Refresh</span>
@@ -243,19 +243,19 @@ const NewsManagement: React.FC = () => {
       {blogPosts.length > 0 && (
         <div className="bg-white rounded-xl shadow-sm p-6">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-bold text-[#0D225C]">Import from Blog</h3>
+            <h3 className="text-lg font-bold text-[#2e3192]">Import from Blog</h3>
             <span className="text-sm text-[#747488]">{blogPosts.length} posts available</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-64 overflow-y-auto">
             {blogPosts.map((post, index) => (
               <div key={index} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                <h4 className="font-medium text-[#0D225C] line-clamp-2 mb-2">{post.title}</h4>
+                <h4 className="font-medium text-[#2e3192] line-clamp-2 mb-2">{post.title}</h4>
                 <p className="text-sm text-[#747488] line-clamp-2 mb-3">{post.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-xs text-[#747488]">{post.published_date}</span>
                   <button
                     onClick={() => importFromBlog(post)}
-                    className="text-sm text-[#CCB156] hover:text-[#0D225C] font-medium"
+                    className="text-sm text-[#fdb913] hover:text-[#2e3192] font-medium"
                   >
                     Import
                   </button>
@@ -270,7 +270,7 @@ const NewsManagement: React.FC = () => {
       <div className="bg-white rounded-xl shadow-sm overflow-hidden">
         {isLoading ? (
           <div className="p-8 text-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#0D225C] mx-auto"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#2e3192] mx-auto"></div>
           </div>
         ) : posts.length === 0 ? (
           <div className="p-8 text-center text-[#747488]">
@@ -279,13 +279,13 @@ const NewsManagement: React.FC = () => {
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="bg-[#F0F0EA]">
+              <thead className="bg-[#f8f9fa]">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#0D225C] uppercase">Title</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#0D225C] uppercase">Category</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#0D225C] uppercase">Status</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#0D225C] uppercase">Date</th>
-                  <th className="px-6 py-3 text-right text-xs font-semibold text-[#0D225C] uppercase">Actions</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#2e3192] uppercase">Title</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#2e3192] uppercase">Category</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#2e3192] uppercase">Status</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#2e3192] uppercase">Date</th>
+                  <th className="px-6 py-3 text-right text-xs font-semibold text-[#2e3192] uppercase">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
@@ -294,9 +294,9 @@ const NewsManagement: React.FC = () => {
                     <td className="px-6 py-4">
                       <div className="flex items-center">
                         {post.is_featured && (
-                          <span className="mr-2 text-[#CCB156]">★</span>
+                          <span className="mr-2 text-[#fdb913]">★</span>
                         )}
-                        <span className="font-medium text-[#0D225C]">{post.title}</span>
+                        <span className="font-medium text-[#2e3192]">{post.title}</span>
                       </div>
                     </td>
                     <td className="px-6 py-4 text-sm text-[#747488]">{post.category}</td>
@@ -322,7 +322,7 @@ const NewsManagement: React.FC = () => {
                     <td className="px-6 py-4 text-right space-x-2">
                       <button
                         onClick={() => toggleFeatured(post)}
-                        className={`p-1 rounded ${post.is_featured ? 'text-[#CCB156]' : 'text-gray-400 hover:text-[#CCB156]'}`}
+                        className={`p-1 rounded ${post.is_featured ? 'text-[#fdb913]' : 'text-gray-400 hover:text-[#fdb913]'}`}
                         title={post.is_featured ? 'Unmark featured' : 'Mark as featured'}
                       >
                         ★
@@ -332,7 +332,7 @@ const NewsManagement: React.FC = () => {
                           href={post.blog_url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="p-1 text-gray-400 hover:text-[#0D225C]"
+                          className="p-1 text-gray-400 hover:text-[#2e3192]"
                         >
                           <ExternalLink className="h-4 w-4" />
                         </a>
@@ -363,7 +363,7 @@ const NewsManagement: React.FC = () => {
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             <div className="p-6 border-b border-gray-200">
-              <h3 className="text-xl font-bold text-[#0D225C]">
+              <h3 className="text-xl font-bold text-[#2e3192]">
                 {editingPost ? 'Edit Post' : 'Create Post'}
               </h3>
             </div>
@@ -375,32 +375,32 @@ const NewsManagement: React.FC = () => {
                 </div>
               )}
               <div>
-                <label className="block text-sm font-semibold text-[#0D225C] mb-2">Title</label>
+                <label className="block text-sm font-semibold text-[#2e3192] mb-2">Title</label>
                 <input
                   type="text"
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                   required
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-[#0D225C] mb-2">Content</label>
+                <label className="block text-sm font-semibold text-[#2e3192] mb-2">Content</label>
                 <textarea
                   value={formData.content}
                   onChange={(e) => setFormData({ ...formData, content: e.target.value })}
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                   required
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-semibold text-[#0D225C] mb-2">Category</label>
+                  <label className="block text-sm font-semibold text-[#2e3192] mb-2">Category</label>
                   <select
                     value={formData.category}
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                   >
                     <option value="General">General</option>
                     <option value="Announcement">Announcement</option>
@@ -409,23 +409,23 @@ const NewsManagement: React.FC = () => {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-[#0D225C] mb-2">Image URL</label>
+                  <label className="block text-sm font-semibold text-[#2e3192] mb-2">Image URL</label>
                   <input
                     type="url"
                     value={formData.image_url}
                     onChange={(e) => setFormData({ ...formData, image_url: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                     placeholder="https://..."
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-semibold text-[#0D225C] mb-2">Blog URL (optional)</label>
+                <label className="block text-sm font-semibold text-[#2e3192] mb-2">Blog URL (optional)</label>
                 <input
                   type="url"
                   value={formData.blog_url}
                   onChange={(e) => setFormData({ ...formData, blog_url: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                   placeholder="https://..."
                 />
               </div>
@@ -435,31 +435,31 @@ const NewsManagement: React.FC = () => {
                     type="checkbox"
                     checked={formData.is_featured}
                     onChange={(e) => setFormData({ ...formData, is_featured: e.target.checked })}
-                    className="h-4 w-4 text-[#0D225C] focus:ring-[#CCB156]"
+                    className="h-4 w-4 text-[#2e3192] focus:ring-[#fdb913]"
                   />
-                  <span className="text-sm text-[#0D225C]">Featured</span>
+                  <span className="text-sm text-[#2e3192]">Featured</span>
                 </label>
                 <label className="flex items-center space-x-2">
                   <input
                     type="checkbox"
                     checked={formData.is_visible}
                     onChange={(e) => setFormData({ ...formData, is_visible: e.target.checked })}
-                    className="h-4 w-4 text-[#0D225C] focus:ring-[#CCB156]"
+                    className="h-4 w-4 text-[#2e3192] focus:ring-[#fdb913]"
                   />
-                  <span className="text-sm text-[#0D225C]">Visible</span>
+                  <span className="text-sm text-[#2e3192]">Visible</span>
                 </label>
               </div>
               <div className="flex justify-end space-x-3 pt-4">
                 <button
                   type="button"
                   onClick={() => { setShowModal(false); setEditingPost(null); resetForm(); }}
-                  className="px-4 py-2 text-[#747488] hover:text-[#0D225C] transition-colors"
+                  className="px-4 py-2 text-[#747488] hover:text-[#2e3192] transition-colors"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2 bg-[#0D225C] text-white rounded-lg hover:bg-[#0D225C]/90 transition-colors"
+                  className="px-6 py-2 bg-[#2e3192] text-white rounded-lg hover:bg-[#2e3192]/90 transition-colors"
                 >
                   {editingPost ? 'Update' : 'Create'}
                 </button>

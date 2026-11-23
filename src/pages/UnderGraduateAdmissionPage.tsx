@@ -47,12 +47,12 @@ const UnderGraduateAdmissionPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA]">
+    <div className="min-h-screen bg-[#f8f9fa]">
       {/* Hero Section */}
-      <section className="relative bg-[#0D225C] text-white py-20">
+      <section className="relative bg-[#2e3192] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#CCB156] rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#fdb913] rounded-full mb-6">
               <GraduationCap className="h-8 w-8 text-white" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Under-Graduate Admissions</h1>
@@ -67,19 +67,19 @@ const UnderGraduateAdmissionPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">How to Apply</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">How to Apply</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Follow these simple steps to begin your admission process
             </p>
           </div>
 
-          <div className="bg-[#F0F0EA] rounded-xl p-8">
+          <div className="bg-[#f8f9fa] rounded-xl p-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Application Process</h3>
+                <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Application Process</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-[#CCB156] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-[#fdb913] rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-sm">1</span>
                     </div>
                     <p className="text-[#747488] leading-relaxed">
@@ -87,7 +87,7 @@ const UnderGraduateAdmissionPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-[#CCB156] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-[#fdb913] rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-sm">2</span>
                     </div>
                     <p className="text-[#747488] leading-relaxed">
@@ -95,7 +95,7 @@ const UnderGraduateAdmissionPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-[#CCB156] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-[#fdb913] rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-sm">3</span>
                     </div>
                     <p className="text-[#747488] leading-relaxed">
@@ -103,7 +103,7 @@ const UnderGraduateAdmissionPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-[#CCB156] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-[#fdb913] rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-sm">4</span>
                     </div>
                     <p className="text-[#747488] leading-relaxed">
@@ -125,10 +125,10 @@ const UnderGraduateAdmissionPage: React.FC = () => {
       </section>
 
       {/* Documents Required */}
-      <section className="py-20 bg-[#F0F0EA]">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Documents for UG Admission</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Documents for UG Admission</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Please ensure you have all the required documents before applying
             </p>
@@ -137,8 +137,8 @@ const UnderGraduateAdmissionPage: React.FC = () => {
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <div className="grid md:grid-cols-2 gap-6">
               {documents.map((document, index) => (
-                <div key={index} className="flex items-start space-x-3 p-4 bg-[#F0F0EA] rounded-lg">
-                  <CheckCircle className="h-5 w-5 text-[#CCB156] flex-shrink-0 mt-0.5" />
+                <div key={index} className="flex items-start space-x-3 p-4 bg-[#f8f9fa] rounded-lg">
+                  <CheckCircle className="h-5 w-5 text-[#fdb913] flex-shrink-0 mt-0.5" />
                   <span className="text-[#747488]">{document}</span>
                 </div>
               ))}
@@ -163,14 +163,14 @@ const UnderGraduateAdmissionPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Admission through UUCMS Portal</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Admission through UUCMS Portal</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Complete your admission process through the Unified University and College Management System
             </p>
           </div>
 
-          <div className="bg-[#F0F0EA] rounded-xl p-8 mb-12">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">About UUCMS</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 mb-12">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">About UUCMS</h3>
             <p className="text-lg text-[#747488] leading-relaxed mb-6">
               The Unified University and College Management System (UUCMS) is an integrated digital platform to 
               streamline and enhance the management of higher education institutions. The platform is designed to 
@@ -184,29 +184,29 @@ const UnderGraduateAdmissionPage: React.FC = () => {
           </div>
 
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">UUCMS Registration Process</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">UUCMS Registration Process</h3>
             <p className="text-lg text-[#747488] mb-6 leading-relaxed">
               After completing the admission procedure at the college, the student will receive instructions from 
               the office to complete the admission procedure in UUCMS Portal through the link below.
             </p>
             
-            <div className="bg-[#0D225C] p-4 rounded-lg mb-8">
+            <div className="bg-[#2e3192] p-4 rounded-lg mb-8">
               <a 
                 href="https://uucms.karnataka.gov.in/Login/OnlineStudentRegistrationForm"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center space-x-2 text-white hover:text-[#CCB156] transition-colors"
+                className="flex items-center justify-center space-x-2 text-white hover:text-[#fdb913] transition-colors"
               >
                 <span className="font-semibold">UUCMS Registration Portal</span>
                 <ExternalLink className="h-4 w-4" />
               </a>
             </div>
 
-            <h4 className="text-xl font-bold text-[#0D225C] mb-6">Steps to Complete UUCMS Registration:</h4>
+            <h4 className="text-xl font-bold text-[#2e3192] mb-6">Steps to Complete UUCMS Registration:</h4>
             <div className="space-y-4">
               {uucmsSteps.map((step, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="w-8 h-8 bg-[#CCB156] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 bg-[#fdb913] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold text-sm">{index + 1}</span>
                   </div>
                   <p className="text-[#747488] leading-relaxed">{step}</p>
@@ -230,10 +230,10 @@ const UnderGraduateAdmissionPage: React.FC = () => {
       </section>
 
       {/* Eligibility Criteria */}
-      <section className="py-20 bg-[#F0F0EA]">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Eligibility Criteria</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Eligibility Criteria</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Academic requirements for under-graduate program admission
             </p>
@@ -242,17 +242,17 @@ const UnderGraduateAdmissionPage: React.FC = () => {
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <div className="space-y-6">
               <div className="flex items-start space-x-3">
-                <CheckCircle className="h-6 w-6 text-[#CCB156] flex-shrink-0 mt-0.5" />
+                <CheckCircle className="h-6 w-6 text-[#fdb913] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-[#0D225C] mb-2">Merit-Based Admission</h4>
+                  <h4 className="font-bold text-[#2e3192] mb-2">Merit-Based Admission</h4>
                   <p className="text-[#747488]">Admissions are strictly based on merit.</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
-                <CheckCircle className="h-6 w-6 text-[#CCB156] flex-shrink-0 mt-0.5" />
+                <CheckCircle className="h-6 w-6 text-[#fdb913] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-[#0D225C] mb-2">Academic Qualification</h4>
+                  <h4 className="font-bold text-[#2e3192] mb-2">Academic Qualification</h4>
                   <p className="text-[#747488]">
                     Any student who has passed PUC/10+2/Pre-University equivalent courses in Science, Commerce and Arts is eligible for admission.
                   </p>
@@ -260,9 +260,9 @@ const UnderGraduateAdmissionPage: React.FC = () => {
               </div>
               
               <div className="flex items-start space-x-3">
-                <CheckCircle className="h-6 w-6 text-[#CCB156] flex-shrink-0 mt-0.5" />
+                <CheckCircle className="h-6 w-6 text-[#fdb913] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-[#0D225C] mb-2">Timely Admission</h4>
+                  <h4 className="font-bold text-[#2e3192] mb-2">Timely Admission</h4>
                   <p className="text-[#747488]">
                     If a student does not join during the prescribed time the admission will be cancelled and the seat will be allotted to the next student.
                   </p>
@@ -289,14 +289,14 @@ const UnderGraduateAdmissionPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Scholarships</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Scholarships</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               We are committed to supporting students in their educational journey
             </p>
           </div>
 
-          <div className="bg-[#F0F0EA] rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6 text-center">Available Scholarships</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6 text-center">Available Scholarships</h3>
             <p className="text-lg text-[#747488] mb-8 text-center leading-relaxed">
               The following scholarships are available for students:
             </p>
@@ -304,13 +304,13 @@ const UnderGraduateAdmissionPage: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-6">
               {scholarships.map((scholarship, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <h4 className="text-xl font-bold text-[#0D225C] mb-3">{scholarship.name}</h4>
+                  <h4 className="text-xl font-bold text-[#2e3192] mb-3">{scholarship.name}</h4>
                   <p className="text-[#747488] mb-4">{scholarship.description}</p>
                   <a
                     href={scholarship.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 bg-[#0D225C] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#0D225C]/90 transition-all duration-300 hover:scale-105"
+                    className="inline-flex items-center space-x-2 bg-[#2e3192] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#2e3192]/90 transition-all duration-300 hover:scale-105"
                   >
                     <span>Apply Now</span>
                     <ExternalLink className="h-4 w-4" />

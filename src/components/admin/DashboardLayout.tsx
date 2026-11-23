@@ -132,7 +132,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
   return (
     <div className="min-h-screen bg-[#F4F5F7] flex flex-col font-sans">
       {/* Mobile Sidebar Header */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-[#0D225C] z-50 flex items-center justify-between px-4 shadow-md">
+      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-[#2e3192] z-50 flex items-center justify-between px-4 shadow-md">
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
           className="text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
@@ -150,7 +150,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
           href={getAssetUrl('')}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs bg-[#CCB156] text-[#0D225C] font-semibold px-2.5 py-1.5 rounded-lg flex items-center space-x-1"
+          className="text-xs bg-[#fdb913] text-[#2e3192] font-semibold px-2.5 py-1.5 rounded-lg flex items-center space-x-1"
         >
           <span>Live Site</span>
           <ExternalLink className="h-3 w-3" />
@@ -159,7 +159,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-full w-64 bg-[#0D225C] text-white flex flex-col justify-between shadow-2xl z-40 transform transition-transform duration-300 lg:translate-x-0 ${
+        className={`fixed top-0 left-0 h-full w-64 bg-[#2e3192] text-white flex flex-col justify-between shadow-2xl z-40 transform transition-transform duration-300 lg:translate-x-0 ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -177,7 +177,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
               <h1 className="text-lg font-bold tracking-tight text-white leading-tight truncate">
                 PBS Admin
               </h1>
-              <p className="text-xs text-[#CCB156] font-medium flex items-center mt-0.5">
+              <p className="text-xs text-[#fdb913] font-medium flex items-center mt-0.5">
                 <ShieldCheck className="h-3 w-3 mr-1 inline" />
                 {getRoleLabel(user?.role || '')}
               </p>
@@ -201,17 +201,17 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
                   }}
                   className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
                     isActive
-                      ? 'bg-[#CCB156] text-[#0D225C] shadow-sm font-semibold'
+                      ? 'bg-[#fdb913] text-[#2e3192] shadow-sm font-semibold'
                       : 'text-white/80 hover:bg-white/10 hover:text-white'
                   }`}
                 >
                   <div className="flex items-center space-x-3 truncate">
-                    <Icon className={`h-4.5 w-4.5 ${isActive ? 'text-[#0D225C]' : 'text-[#CCB156]'}`} />
+                    <Icon className={`h-4.5 w-4.5 ${isActive ? 'text-[#2e3192]' : 'text-[#fdb913]'}`} />
                     <span className="truncate">{item.label}</span>
                   </div>
                   {item.badge !== undefined && (
                     <span className={`px-2 py-0.5 text-xs rounded-full font-bold ${
-                      isActive ? 'bg-[#0D225C] text-white' : 'bg-[#CCB156] text-[#0D225C]'
+                      isActive ? 'bg-[#2e3192] text-white' : 'bg-[#fdb913] text-[#2e3192]'
                     }`}>
                       {item.badge}
                     </span>
@@ -231,10 +231,10 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
             className="w-full flex items-center justify-between px-3 py-2 text-xs font-medium text-white/80 hover:text-white bg-white/5 hover:bg-white/10 rounded-lg transition-all"
           >
             <div className="flex items-center space-x-2">
-              <ExternalLink className="h-3.5 w-3.5 text-[#CCB156]" />
+              <ExternalLink className="h-3.5 w-3.5 text-[#fdb913]" />
               <span>View Public Website</span>
             </div>
-            <span className="text-[10px] text-[#CCB156]">Live</span>
+            <span className="text-[10px] text-[#fdb913]">Live</span>
           </a>
 
           <button
@@ -252,7 +252,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
         {/* Top Header */}
         <header className="bg-white sticky top-0 z-30 border-b border-gray-200 h-16 flex items-center justify-between px-4 sm:px-6 lg:px-8 mt-16 lg:mt-0 shadow-sm">
           <div className="flex items-center space-x-3">
-            <h2 className="text-xl font-bold text-[#0D225C]">
+            <h2 className="text-xl font-bold text-[#2e3192]">
               {visibleMenuItems.find(item => item.id === activeModule)?.label || 'Admin Portal'}
             </h2>
           </div>
@@ -264,7 +264,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
               onClick={checkHealth}
               title="Click to re-verify live database health"
             >
-              <Database className="h-3.5 w-3.5 text-[#0D225C]" />
+              <Database className="h-3.5 w-3.5 text-[#2e3192]" />
               <span className="hidden md:inline text-[#747488]">DB:</span>
               {dbStatus === 'healthy' ? (
                 <span className="flex items-center text-green-700 font-semibold">
@@ -289,7 +289,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
               href={getAssetUrl('')}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-medium text-[#0D225C] bg-[#CCB156]/20 hover:bg-[#CCB156]/30 border border-[#CCB156]/40 rounded-lg transition-colors"
+              className="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-medium text-[#2e3192] bg-[#fdb913]/20 hover:bg-[#fdb913]/30 border border-[#fdb913]/40 rounded-lg transition-colors"
             >
               <span>Live Site</span>
               <ExternalLink className="h-3 w-3" />
@@ -299,18 +299,18 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
             <div className="relative">
               <button
                 onClick={() => setNotificationsOpen(!notificationsOpen)}
-                className="relative p-2 text-gray-500 hover:text-[#0D225C] hover:bg-gray-100 rounded-lg transition-colors"
+                className="relative p-2 text-gray-500 hover:text-[#2e3192] hover:bg-gray-100 rounded-lg transition-colors"
                 aria-label="Notifications"
               >
                 <Bell className="h-5 w-5" />
-                <span className="absolute top-1.5 right-1.5 h-2 w-2 bg-[#CCB156] rounded-full ring-2 ring-white"></span>
+                <span className="absolute top-1.5 right-1.5 h-2 w-2 bg-[#fdb913] rounded-full ring-2 ring-white"></span>
               </button>
 
               {notificationsOpen && (
                 <div className="absolute right-0 mt-2 w-80 bg-white rounded-2xl shadow-xl border border-gray-100 p-4 z-50 animate-in fade-in slide-in-from-top-2">
                   <div className="flex items-center justify-between pb-3 border-b border-gray-100">
-                    <h4 className="font-bold text-sm text-[#0D225C]">System Notifications</h4>
-                    <span className="text-[11px] text-[#CCB156] font-semibold bg-[#CCB156]/10 px-2 py-0.5 rounded-full">Live</span>
+                    <h4 className="font-bold text-sm text-[#2e3192]">System Notifications</h4>
+                    <span className="text-[11px] text-[#fdb913] font-semibold bg-[#fdb913]/10 px-2 py-0.5 rounded-full">Live</span>
                   </div>
                   <div className="py-3 space-y-2 text-xs text-gray-600">
                     <div className="flex items-start space-x-2.5 p-2 bg-green-50/60 rounded-xl">
@@ -338,11 +338,11 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
                 onClick={() => setUserMenuOpen(!userMenuOpen)}
                 className="flex items-center space-x-2.5 p-1.5 rounded-xl hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-200"
               >
-                <div className="h-8 w-8 bg-[#0D225C] text-[#CCB156] font-bold rounded-lg flex items-center justify-center shadow-sm text-sm">
+                <div className="h-8 w-8 bg-[#2e3192] text-[#fdb913] font-bold rounded-lg flex items-center justify-center shadow-sm text-sm">
                   {user?.full_name ? user.full_name.charAt(0).toUpperCase() : 'A'}
                 </div>
                 <div className="hidden md:block text-left pr-1">
-                  <span className="block text-xs font-bold text-[#0D225C] leading-tight truncate max-w-[120px]">
+                  <span className="block text-xs font-bold text-[#2e3192] leading-tight truncate max-w-[120px]">
                     {user?.full_name || 'Admin'}
                   </span>
                   <span className="block text-[10px] text-[#747488] leading-tight">
@@ -355,9 +355,9 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeModul
               {userMenuOpen && (
                 <div className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50 animate-in fade-in slide-in-from-top-2">
                   <div className="px-4 py-3 border-b border-gray-100 bg-gray-50/50 rounded-t-2xl">
-                    <p className="text-xs font-bold text-[#0D225C]">{user?.full_name}</p>
+                    <p className="text-xs font-bold text-[#2e3192]">{user?.full_name}</p>
                     <p className="text-[11px] text-gray-500 truncate mt-0.5">{user?.email}</p>
-                    <span className="inline-block mt-1 text-[10px] uppercase font-semibold tracking-wider text-[#0D225C] bg-[#CCB156]/20 px-2 py-0.5 rounded-full">
+                    <span className="inline-block mt-1 text-[10px] uppercase font-semibold tracking-wider text-[#2e3192] bg-[#fdb913]/20 px-2 py-0.5 rounded-full">
                       {user?.role}
                     </span>
                   </div>

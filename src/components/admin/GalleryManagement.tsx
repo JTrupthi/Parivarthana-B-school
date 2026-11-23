@@ -364,8 +364,8 @@ const GalleryManagement: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
         <div>
           <div className="flex items-center space-x-3">
-            <h2 className="text-2xl font-bold text-[#0D225C]">Gallery Management</h2>
-            <span className="px-3 py-1 bg-[#0D225C]/10 text-[#0D225C] text-xs font-semibold rounded-full">
+            <h2 className="text-2xl font-bold text-[#2e3192]">Gallery Management</h2>
+            <span className="px-3 py-1 bg-[#2e3192]/10 text-[#2e3192] text-xs font-semibold rounded-full">
               {items.length} Photos
             </span>
           </div>
@@ -376,7 +376,7 @@ const GalleryManagement: React.FC = () => {
         <div className="flex items-center space-x-3">
           <button
             onClick={openAddModal}
-            className="flex items-center space-x-2 bg-[#0D225C] text-white px-4 py-2.5 rounded-lg hover:bg-[#0D225C]/90 transition-all font-medium text-sm shadow-sm"
+            className="flex items-center space-x-2 bg-[#2e3192] text-white px-4 py-2.5 rounded-lg hover:bg-[#2e3192]/90 transition-all font-medium text-sm shadow-sm"
           >
             <Plus className="h-4 w-4" />
             <span>Add Image</span>
@@ -384,7 +384,7 @@ const GalleryManagement: React.FC = () => {
           <button
             onClick={fetchItems}
             title="Refresh Gallery"
-            className="p-2.5 bg-gray-50 text-[#0D225C] rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors"
+            className="p-2.5 bg-gray-50 text-[#2e3192] rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors"
           >
             <RefreshCw className={`h-4 w-4 ${isLoading ? 'animate-spin' : ''}`} />
           </button>
@@ -405,7 +405,7 @@ const GalleryManagement: React.FC = () => {
           onClick={() => setSelectedCategory('All')}
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
             selectedCategory === 'All'
-              ? 'bg-[#0D225C] text-white shadow-sm'
+              ? 'bg-[#2e3192] text-white shadow-sm'
               : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
           }`}
         >
@@ -418,7 +418,7 @@ const GalleryManagement: React.FC = () => {
             onClick={() => setSelectedCategory(cat)}
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
               selectedCategory === cat
-                ? 'bg-[#0D225C] text-white shadow-sm'
+                ? 'bg-[#2e3192] text-white shadow-sm'
                 : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
             }`}
           >
@@ -430,7 +430,7 @@ const GalleryManagement: React.FC = () => {
       {/* Gallery Grid */}
       {isLoading ? (
         <div className="p-16 text-center bg-white rounded-xl shadow-sm">
-          <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-[#0D225C] mx-auto"></div>
+          <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-[#2e3192] mx-auto"></div>
           <p className="text-[#747488] text-sm mt-3">Loading gallery items...</p>
         </div>
       ) : items.length === 0 ? (
@@ -440,7 +440,7 @@ const GalleryManagement: React.FC = () => {
           <p className="text-xs text-gray-500 mt-1">Upload your first photo for this category!</p>
           <button
             onClick={openAddModal}
-            className="mt-4 inline-flex items-center space-x-2 bg-[#0D225C] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#0D225C]/90"
+            className="mt-4 inline-flex items-center space-x-2 bg-[#2e3192] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#2e3192]/90"
           >
             <Plus className="h-4 w-4" />
             <span>Add Photo</span>
@@ -478,7 +478,7 @@ const GalleryManagement: React.FC = () => {
                 </span>
 
                 {/* Category Badge */}
-                <span className="absolute top-2 right-2 px-2 py-0.5 rounded-md text-[11px] font-bold bg-[#0D225C]/80 text-[#CCB156] backdrop-blur-sm">
+                <span className="absolute top-2 right-2 px-2 py-0.5 rounded-md text-[11px] font-bold bg-[#2e3192]/80 text-[#fdb913] backdrop-blur-sm">
                   {item.category}
                 </span>
 
@@ -487,7 +487,7 @@ const GalleryManagement: React.FC = () => {
                   <button
                     onClick={() => openEditModal(item)}
                     title="Edit Item"
-                    className="p-2.5 bg-white text-[#0D225C] rounded-full hover:bg-gray-100 transition-transform hover:scale-110 shadow-lg"
+                    className="p-2.5 bg-white text-[#2e3192] rounded-full hover:bg-gray-100 transition-transform hover:scale-110 shadow-lg"
                   >
                     <Edit2 className="h-4 w-4" />
                   </button>
@@ -504,7 +504,7 @@ const GalleryManagement: React.FC = () => {
               {/* Title & Description */}
               <div className="p-3.5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-bold text-[#0D225C] text-sm line-clamp-1" title={item.title}>
+                  <h3 className="font-bold text-[#2e3192] text-sm line-clamp-1" title={item.title}>
                     {item.title}
                   </h3>
                   {item.description && (
@@ -517,7 +517,7 @@ const GalleryManagement: React.FC = () => {
                 <div className="flex items-center justify-between mt-3 pt-2 border-t border-gray-100">
                   <button
                     onClick={() => toggleActive(item)}
-                    className="text-xs text-[#0D225C] font-semibold hover:underline flex items-center space-x-1"
+                    className="text-xs text-[#2e3192] font-semibold hover:underline flex items-center space-x-1"
                   >
                     {item.is_active ? <Eye className="h-3.5 w-3.5 text-green-600" /> : <EyeOff className="h-3.5 w-3.5 text-gray-500" />}
                     <span>{item.is_active ? 'Public' : 'Hidden'}</span>
@@ -536,7 +536,7 @@ const GalleryManagement: React.FC = () => {
       {showModal && (
         <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl">
-            <div className="p-6 border-b border-gray-200 flex items-center justify-between bg-[#0D225C] text-white rounded-t-2xl">
+            <div className="p-6 border-b border-gray-200 flex items-center justify-between bg-[#2e3192] text-white rounded-t-2xl">
               <div>
                 <h3 className="text-xl font-bold">
                   {editingItem ? 'Edit Gallery Photo' : 'Add Photo to Gallery'}
@@ -562,27 +562,27 @@ const GalleryManagement: React.FC = () => {
               )}
 
               <div>
-                <label className="block text-xs font-bold text-[#0D225C] uppercase tracking-wider mb-1.5">
+                <label className="block text-xs font-bold text-[#2e3192] uppercase tracking-wider mb-1.5">
                   Title *
                 </label>
                 <input
                   type="text"
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent text-sm"
+                  className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent text-sm"
                   placeholder="e.g., Campus Infrastructure & Garden"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-[#0D225C] uppercase tracking-wider mb-1.5">
+                <label className="block text-xs font-bold text-[#2e3192] uppercase tracking-wider mb-1.5">
                   Category *
                 </label>
                 <select
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                  className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent text-sm bg-white"
+                  className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent text-sm bg-white"
                   required
                 >
                   {CATEGORIES.map(c => (
@@ -592,14 +592,14 @@ const GalleryManagement: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-[#0D225C] uppercase tracking-wider mb-1.5">
+                <label className="block text-xs font-bold text-[#2e3192] uppercase tracking-wider mb-1.5">
                   Description
                 </label>
                 <textarea
                   value={formData.description}
                   onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                   rows={2}
-                  className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent text-sm"
+                  className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent text-sm"
                   placeholder="Brief description of the photo..."
                 />
               </div>
@@ -607,7 +607,7 @@ const GalleryManagement: React.FC = () => {
               {/* Photo Upload & Auto-fill URL */}
               <div className="bg-[#F8F9FA] p-4 rounded-xl border border-gray-200 space-y-3">
                 <div className="flex items-center justify-between">
-                  <label className="block text-xs font-bold text-[#0D225C] uppercase tracking-wider">
+                  <label className="block text-xs font-bold text-[#2e3192] uppercase tracking-wider">
                     Photo (Upload or URL) *
                   </label>
                   {formData.image_url && (
@@ -620,8 +620,8 @@ const GalleryManagement: React.FC = () => {
 
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
                   <label className="flex-1 cursor-pointer">
-                    <div className="flex items-center justify-center space-x-2 px-4 py-2.5 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-sm text-[#0D225C] font-medium shadow-sm">
-                      <Upload className="h-4 w-4 text-[#CCB156]" />
+                    <div className="flex items-center justify-center space-x-2 px-4 py-2.5 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-sm text-[#2e3192] font-medium shadow-sm">
+                      <Upload className="h-4 w-4 text-[#fdb913]" />
                       <span>{imageFile ? 'Change Uploaded Photo' : 'Upload from Device'}</span>
                     </div>
                     <input
@@ -659,7 +659,7 @@ const GalleryManagement: React.FC = () => {
                     type="text"
                     value={formData.image_url}
                     onChange={(e) => setFormData({ ...formData, image_url: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent text-xs text-gray-600 font-mono bg-white truncate"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent text-xs text-gray-600 font-mono bg-white truncate"
                     placeholder="https://... or auto-filled upon upload"
                     required
                   />
@@ -684,22 +684,22 @@ const GalleryManagement: React.FC = () => {
                   type="checkbox"
                   checked={formData.is_active}
                   onChange={(e) => setFormData({ ...formData, is_active: e.target.checked })}
-                  className="h-4 w-4 rounded text-[#0D225C] focus:ring-[#CCB156]"
+                  className="h-4 w-4 rounded text-[#2e3192] focus:ring-[#fdb913]"
                 />
-                <span className="text-sm font-medium text-[#0D225C]">Visible on public Gallery page</span>
+                <span className="text-sm font-medium text-[#2e3192]">Visible on public Gallery page</span>
               </label>
 
               <div className="flex justify-end space-x-3 pt-4 border-t border-gray-200">
                 <button
                   type="button"
                   onClick={() => { setShowModal(false); setEditingItem(null); resetForm(); }}
-                  className="px-4 py-2.5 text-sm text-[#747488] hover:text-[#0D225C] transition-colors font-medium"
+                  className="px-4 py-2.5 text-sm text-[#747488] hover:text-[#2e3192] transition-colors font-medium"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2.5 bg-[#0D225C] text-white rounded-lg hover:bg-[#0D225C]/90 transition-all font-medium text-sm shadow-sm"
+                  className="px-6 py-2.5 bg-[#2e3192] text-white rounded-lg hover:bg-[#2e3192]/90 transition-all font-medium text-sm shadow-sm"
                 >
                   {editingItem ? 'Update Photo' : 'Add Photo'}
                 </button>

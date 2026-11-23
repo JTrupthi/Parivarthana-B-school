@@ -87,9 +87,9 @@ With warm regards and best wishes for your success.`
   };
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA]">
+    <div className="min-h-screen bg-[#f8f9fa]">
       {/* Hero Section */}
-      <section className="relative bg-[#0D225C] text-white py-20">
+      <section className="relative bg-[#2e3192] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Board of Trustees</h1>
@@ -104,10 +104,10 @@ With warm regards and best wishes for your success.`
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#CCB156] rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#fdb913] rounded-full mb-6">
               <MessageCircle className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Messages from the Management</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Messages from the Management</h2>
           </div>
 
           <div className="space-y-12">
@@ -117,11 +117,11 @@ With warm regards and best wishes for your success.`
                   <img
                     src={getAssetUrl(message.image)}
                     alt={message.name}
-                    className="w-20 h-20 rounded-full object-cover border-4 border-[#CCB156] flex-shrink-0"
+                    className="w-20 h-20 rounded-full object-cover border-4 border-[#fdb913] flex-shrink-0"
                   />
                   <div>
-                    <h3 className="text-2xl font-bold text-[#0D225C] mb-2">{message.name}</h3>
-                    <p className="text-[#CCB156] font-semibold">{message.position}</p>
+                    <h3 className="text-2xl font-bold text-[#2e3192] mb-2">{message.name}</h3>
+                    <p className="text-[#fdb913] font-semibold">{message.position}</p>
                   </div>
                 </div>
                 <div className="prose prose-lg max-w-none">
@@ -137,42 +137,42 @@ With warm regards and best wishes for your success.`
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Governance Structure</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Governance Structure</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Our transparent and effective governance ensures accountability and strategic direction
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center bg-[#F0F0EA] rounded-xl p-6">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0D225C] rounded-lg mb-4">
+            <div className="text-center bg-[#f8f9fa] rounded-xl p-6">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-[#2e3192] rounded-lg mb-4">
                 <Crown className="h-6 w-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-[#0D225C] mb-2">Strategic Leadership</h4>
+              <h4 className="text-lg font-bold text-[#2e3192] mb-2">Strategic Leadership</h4>
               <p className="text-[#747488] text-sm">Providing vision and strategic direction for institutional growth</p>
             </div>
             
-            <div className="text-center bg-[#F0F0EA] rounded-xl p-6">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-[#CCB156] rounded-lg mb-4">
+            <div className="text-center bg-[#f8f9fa] rounded-xl p-6">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-[#fdb913] rounded-lg mb-4">
                 <Users className="h-6 w-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-[#0D225C] mb-2">Collaborative Decision</h4>
+              <h4 className="text-lg font-bold text-[#2e3192] mb-2">Collaborative Decision</h4>
               <p className="text-[#747488] text-sm">Ensuring collective wisdom in all major decisions</p>
             </div>
             
-            <div className="text-center bg-[#F0F0EA] rounded-xl p-6">
+            <div className="text-center bg-[#f8f9fa] rounded-xl p-6">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-green-600 rounded-lg mb-4">
                 <Award className="h-6 w-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-[#0D225C] mb-2">Quality Assurance</h4>
+              <h4 className="text-lg font-bold text-[#2e3192] mb-2">Quality Assurance</h4>
               <p className="text-[#747488] text-sm">Maintaining highest standards in education and administration</p>
             </div>
             
-            <div className="text-center bg-[#F0F0EA] rounded-xl p-6">
+            <div className="text-center bg-[#f8f9fa] rounded-xl p-6">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-600 rounded-lg mb-4">
                 <MessageCircle className="h-6 w-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-[#0D225C] mb-2">Stakeholder Engagement</h4>
+              <h4 className="text-lg font-bold text-[#2e3192] mb-2">Stakeholder Engagement</h4>
               <p className="text-[#747488] text-sm">Active communication with all stakeholders</p>
             </div>
           </div>

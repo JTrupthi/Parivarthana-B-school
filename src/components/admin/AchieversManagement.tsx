@@ -163,14 +163,14 @@ const AchieversManagement: React.FC = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-bold text-[#0D225C]">Student Achievers</h2>
+          <h2 className="text-2xl font-bold text-[#2e3192]">Student Achievers</h2>
           <p className="text-[#747488]">Manage student achievements and awards</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
           >
             <option value="">All Categories</option>
             {categories.map(c => <option key={c} value={c}>{c}</option>)}
@@ -178,21 +178,21 @@ const AchieversManagement: React.FC = () => {
           <select
             value={selectedYear}
             onChange={(e) => setSelectedYear(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
           >
             <option value="">All Years</option>
             {years.map(y => <option key={y} value={y}>{y}</option>)}
           </select>
           <button
             onClick={() => { resetForm(); setShowModal(true); }}
-            className="flex items-center space-x-2 bg-[#0D225C] text-white px-4 py-2 rounded-lg hover:bg-[#0D225C]/90 transition-colors"
+            className="flex items-center space-x-2 bg-[#2e3192] text-white px-4 py-2 rounded-lg hover:bg-[#2e3192]/90 transition-colors"
           >
             <Plus className="h-4 w-4" />
             <span>Add Achievement</span>
           </button>
           <button
             onClick={fetchAchievers}
-            className="flex items-center space-x-2 bg-white text-[#0D225C] px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
+            className="flex items-center space-x-2 bg-white text-[#2e3192] px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
           >
             <RefreshCw className="h-4 w-4" />
           </button>
@@ -202,7 +202,7 @@ const AchieversManagement: React.FC = () => {
       {/* Achievers Grid */}
       {isLoading ? (
         <div className="p-8 text-center">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#0D225C] mx-auto"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#2e3192] mx-auto"></div>
         </div>
       ) : achievers.length === 0 ? (
         <div className="bg-white rounded-xl shadow-sm p-8 text-center text-[#747488]">
@@ -221,8 +221,8 @@ const AchieversManagement: React.FC = () => {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-[#0D225C] to-[#0D225C]/80 flex items-center justify-center">
-                    <Trophy className="h-16 w-16 text-[#CCB156]" />
+                  <div className="w-full h-full bg-gradient-to-br from-[#2e3192] to-[#2e3192]/80 flex items-center justify-center">
+                    <Trophy className="h-16 w-16 text-[#fdb913]" />
                   </div>
                 )}
                 <div className="absolute top-2 right-2 flex space-x-1">
@@ -230,7 +230,7 @@ const AchieversManagement: React.FC = () => {
                     onClick={() => openEditModal(achiever)}
                     className="p-2 bg-white rounded-full shadow-sm hover:bg-gray-100"
                   >
-                    <Edit2 className="h-4 w-4 text-[#0D225C]" />
+                    <Edit2 className="h-4 w-4 text-[#2e3192]" />
                   </button>
                   <button
                     onClick={() => handleDelete(achiever.id)}
@@ -247,12 +247,12 @@ const AchieversManagement: React.FC = () => {
               </div>
               <div className="p-4">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs font-medium text-[#CCB156] bg-[#CCB156]/10 px-2 py-1 rounded">
+                  <span className="text-xs font-medium text-[#fdb913] bg-[#fdb913]/10 px-2 py-1 rounded">
                     {achiever.category}
                   </span>
                   <span className="text-xs text-[#747488]">{achiever.year}</span>
                 </div>
-                <h3 className="font-bold text-[#0D225C] mb-1">{achiever.name}</h3>
+                <h3 className="font-bold text-[#2e3192] mb-1">{achiever.name}</h3>
                 <p className="text-sm text-[#747488] line-clamp-2">{achiever.achievement}</p>
               </div>
             </div>
@@ -265,7 +265,7 @@ const AchieversManagement: React.FC = () => {
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-xl max-w-lg w-full max-h-[90vh] overflow-y-auto">
             <div className="p-6 border-b border-gray-200">
-              <h3 className="text-xl font-bold text-[#0D225C]">
+              <h3 className="text-xl font-bold text-[#2e3192]">
                 {editingAchiever ? 'Edit Achievement' : 'Add Achievement'}
               </h3>
             </div>
@@ -277,44 +277,44 @@ const AchieversManagement: React.FC = () => {
                 </div>
               )}
               <div>
-                <label className="block text-sm font-semibold text-[#0D225C] mb-2">Student Name *</label>
+                <label className="block text-sm font-semibold text-[#2e3192] mb-2">Student Name *</label>
                 <input
                   type="text"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                   required
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-[#0D225C] mb-2">Achievement *</label>
+                <label className="block text-sm font-semibold text-[#2e3192] mb-2">Achievement *</label>
                 <input
                   type="text"
                   value={formData.achievement}
                   onChange={(e) => setFormData({ ...formData, achievement: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                   placeholder="e.g., First Prize in National Debate"
                   required
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-semibold text-[#0D225C] mb-2">Category *</label>
+                  <label className="block text-sm font-semibold text-[#2e3192] mb-2">Category *</label>
                   <select
                     value={formData.category}
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                     required
                   >
                     {categories.map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-[#0D225C] mb-2">Year *</label>
+                  <label className="block text-sm font-semibold text-[#2e3192] mb-2">Year *</label>
                   <select
                     value={formData.year}
                     onChange={(e) => setFormData({ ...formData, year: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                     required
                   >
                     {years.map(y => <option key={y} value={y}>{y}</option>)}
@@ -322,21 +322,21 @@ const AchieversManagement: React.FC = () => {
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-semibold text-[#0D225C] mb-2">Description</label>
+                <label className="block text-sm font-semibold text-[#2e3192] mb-2">Description</label>
                 <textarea
                   value={formData.description}
                   onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                   rows={3}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-[#0D225C] mb-2">Image URL</label>
+                <label className="block text-sm font-semibold text-[#2e3192] mb-2">Image URL</label>
                 <input
                   type="url"
                   value={formData.image_url}
                   onChange={(e) => setFormData({ ...formData, image_url: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CCB156] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fdb913] focus:border-transparent"
                   placeholder="https://..."
                 />
               </div>
@@ -345,21 +345,21 @@ const AchieversManagement: React.FC = () => {
                   type="checkbox"
                   checked={formData.is_active}
                   onChange={(e) => setFormData({ ...formData, is_active: e.target.checked })}
-                  className="h-4 w-4 text-[#0D225C] focus:ring-[#CCB156]"
+                  className="h-4 w-4 text-[#2e3192] focus:ring-[#fdb913]"
                 />
-                <span className="text-sm text-[#0D225C]">Visible</span>
+                <span className="text-sm text-[#2e3192]">Visible</span>
               </label>
               <div className="flex justify-end space-x-3 pt-4">
                 <button
                   type="button"
                   onClick={() => { setShowModal(false); setEditingAchiever(null); resetForm(); }}
-                  className="px-4 py-2 text-[#747488] hover:text-[#0D225C] transition-colors"
+                  className="px-4 py-2 text-[#747488] hover:text-[#2e3192] transition-colors"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2 bg-[#0D225C] text-white rounded-lg hover:bg-[#0D225C]/90 transition-colors"
+                  className="px-6 py-2 bg-[#2e3192] text-white rounded-lg hover:bg-[#2e3192]/90 transition-colors"
                 >
                   {editingAchiever ? 'Update' : 'Add'}
                 </button>

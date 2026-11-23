@@ -70,12 +70,12 @@ const PostGraduateAdmissionPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA]">
+    <div className="min-h-screen bg-[#f8f9fa]">
       {/* Hero Section */}
-      <section className="relative bg-[#0D225C] text-white py-20">
+      <section className="relative bg-[#2e3192] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#CCB156] rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#fdb913] rounded-full mb-6">
               <GraduationCap className="h-8 w-8 text-white" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Post-Graduate Admissions</h1>
@@ -90,7 +90,7 @@ const PostGraduateAdmissionPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Entrance Examinations for Admission</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Entrance Examinations for Admission</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Information about required entrance examinations for different post-graduate programs
             </p>
@@ -98,18 +98,18 @@ const PostGraduateAdmissionPage: React.FC = () => {
 
           {/* MCA & MBA Programs */}
           <div className="bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-8 text-center">For admission to MCA & MBA Programmes</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-8 text-center">For admission to MCA & MBA Programmes</h3>
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Government Quota */}
-              <div className="bg-[#F0F0EA] p-6 rounded-xl">
-                <h4 className="text-xl font-bold text-[#0D225C] mb-4">{mcaMbaAdmission.governmentQuota.title}</h4>
+              <div className="bg-[#f8f9fa] p-6 rounded-xl">
+                <h4 className="text-xl font-bold text-[#2e3192] mb-4">{mcaMbaAdmission.governmentQuota.title}</h4>
                 <p className="text-[#747488] mb-4 leading-relaxed">{mcaMbaAdmission.governmentQuota.description}</p>
                 <a
                   href={mcaMbaAdmission.governmentQuota.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-[#0D225C] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#0D225C]/90 transition-all duration-300"
+                  className="inline-flex items-center space-x-2 bg-[#2e3192] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#2e3192]/90 transition-all duration-300"
                 >
                   <span>KEA Portal</span>
                   <ExternalLink className="h-4 w-4" />
@@ -117,8 +117,8 @@ const PostGraduateAdmissionPage: React.FC = () => {
               </div>
 
               {/* Management Quota */}
-              <div className="bg-[#F0F0EA] p-6 rounded-xl">
-                <h4 className="text-xl font-bold text-[#0D225C] mb-4">{mcaMbaAdmission.managementQuota.title}</h4>
+              <div className="bg-[#f8f9fa] p-6 rounded-xl">
+                <h4 className="text-xl font-bold text-[#2e3192] mb-4">{mcaMbaAdmission.managementQuota.title}</h4>
                 <p className="text-[#747488] mb-4 leading-relaxed">{mcaMbaAdmission.managementQuota.description}</p>
                 <div className="space-y-2">
                   {mcaMbaAdmission.managementQuota.links.map((link, index) => (
@@ -127,7 +127,7 @@ const PostGraduateAdmissionPage: React.FC = () => {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 bg-[#CCB156] text-[#0D225C] px-4 py-2 rounded-lg font-semibold hover:bg-[#CCB156]/90 transition-all duration-300 mr-2"
+                      className="inline-flex items-center space-x-2 bg-[#fdb913] text-[#2e3192] px-4 py-2 rounded-lg font-semibold hover:bg-[#fdb913]/90 transition-all duration-300 mr-2"
                     >
                       <span>{link.label}</span>
                       <ExternalLink className="h-4 w-4" />
@@ -141,26 +141,26 @@ const PostGraduateAdmissionPage: React.FC = () => {
       </section>
 
       {/* MBA Eligibility */}
-      <section className="py-20 bg-[#F0F0EA]">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">MBA (Master of Business Administration)</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">MBA (Master of Business Administration)</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Eligibility criteria for MBA program admission
             </p>
           </div>
 
           <div className="bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-8">Eligibility Criteria</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-8">Eligibility Criteria</h3>
             
             <div className="grid md:grid-cols-2 gap-8">
               {mbaEligibility.map((quota, index) => (
-                <div key={index} className="bg-[#F0F0EA] p-6 rounded-xl">
-                  <h4 className="text-xl font-bold text-[#0D225C] mb-4">{quota.quota}</h4>
+                <div key={index} className="bg-[#f8f9fa] p-6 rounded-xl">
+                  <h4 className="text-xl font-bold text-[#2e3192] mb-4">{quota.quota}</h4>
                   <div className="space-y-3">
                     {quota.requirements.map((requirement, reqIndex) => (
                       <div key={reqIndex} className="flex items-start space-x-3">
-                        <CheckCircle className="h-5 w-5 text-[#CCB156] flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="h-5 w-5 text-[#fdb913] flex-shrink-0 mt-0.5" />
                         <span className="text-[#747488] text-sm leading-relaxed">{requirement}</span>
                       </div>
                     ))}
@@ -176,14 +176,14 @@ const PostGraduateAdmissionPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">MCA (Master of Computer Applications)</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">MCA (Master of Computer Applications)</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Eligibility criteria for MCA program admission
             </p>
           </div>
 
-          <div className="bg-[#F0F0EA] rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-8">Eligibility Criteria</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-8">Eligibility Criteria</h3>
             <p className="text-lg text-[#747488] mb-6 leading-relaxed">
               Candidates possessing a degree of University of Mysore, or of any other University, equivalent 
               there to and complying with the eligibility criteria:
@@ -192,7 +192,7 @@ const PostGraduateAdmissionPage: React.FC = () => {
             <div className="space-y-4">
               {mcaEligibility.map((criterion, index) => (
                 <div key={index} className="flex items-start space-x-3 bg-white p-4 rounded-lg shadow-lg">
-                  <CheckCircle className="h-5 w-5 text-[#CCB156] flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-5 w-5 text-[#fdb913] flex-shrink-0 mt-0.5" />
                   <span className="text-[#747488] leading-relaxed">{criterion}</span>
                 </div>
               ))}
@@ -205,14 +205,14 @@ const PostGraduateAdmissionPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Scholarships</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Scholarships</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               We are committed to supporting students in their educational journey
             </p>
           </div>
 
-          <div className="bg-[#F0F0EA] rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6 text-center">Available Scholarships</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6 text-center">Available Scholarships</h3>
             <p className="text-lg text-[#747488] mb-8 text-center leading-relaxed">
               The following scholarships are available for students:
             </p>
@@ -220,13 +220,13 @@ const PostGraduateAdmissionPage: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-6">
               {scholarships.map((scholarship, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <h4 className="text-xl font-bold text-[#0D225C] mb-3">{scholarship.name}</h4>
+                  <h4 className="text-xl font-bold text-[#2e3192] mb-3">{scholarship.name}</h4>
                   <p className="text-[#747488] mb-4">{scholarship.description}</p>
                   <a
                     href={scholarship.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 bg-[#0D225C] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#0D225C]/90 transition-all duration-300 hover:scale-105"
+                    className="inline-flex items-center space-x-2 bg-[#2e3192] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#2e3192]/90 transition-all duration-300 hover:scale-105"
                   >
                     <span>Apply Now</span>
                     <ExternalLink className="h-4 w-4" />

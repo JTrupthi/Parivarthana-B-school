@@ -75,7 +75,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onNav
           <input
             ref={inputRef}
             type="text"
-            className="flex-grow text-lg sm:text-xl font-medium outline-none text-[#0D225C] placeholder-gray-300"
+            className="flex-grow text-lg sm:text-xl font-medium outline-none text-[#2e3192] placeholder-gray-300"
             placeholder="Search policies, syllabus, documents..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -108,11 +108,11 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onNav
                       <button
                         key={page.path}
                         onClick={() => handlePageClick(page.path)}
-                        className="w-full flex items-center p-3 rounded-xl hover:bg-[#0D225C]/5 transition-colors group text-left"
+                        className="w-full flex items-center p-3 rounded-xl hover:bg-[#2e3192]/5 transition-colors group text-left"
                       >
-                        <File className="w-5 h-5 text-[#CCB156] mr-3" />
-                        <span className="flex-grow font-bold text-[#0D225C] group-hover:text-[#143282]">{page.title}</span>
-                        <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-[#0D225C]" />
+                        <File className="w-5 h-5 text-[#fdb913] mr-3" />
+                        <span className="flex-grow font-bold text-[#2e3192] group-hover:text-[#1b1e56]">{page.title}</span>
+                        <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-[#2e3192]" />
                       </button>
                     ))}
                   </div>
@@ -127,14 +127,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onNav
                       <button
                         key={doc.id}
                         onClick={handleDocClick}
-                        className="w-full flex items-center p-3 rounded-xl hover:bg-[#0D225C]/5 transition-colors group text-left"
+                        className="w-full flex items-center p-3 rounded-xl hover:bg-[#2e3192]/5 transition-colors group text-left"
                       >
-                        <FileText className="w-5 h-5 text-[#0D225C] opacity-70 mr-3" />
+                        <FileText className="w-5 h-5 text-[#2e3192] opacity-70 mr-3" />
                         <div className="flex-grow">
-                          <h4 className="font-bold text-[#0D225C] leading-tight group-hover:text-[#143282]">{doc.title}</h4>
+                          <h4 className="font-bold text-[#2e3192] leading-tight group-hover:text-[#1b1e56]">{doc.title}</h4>
                           <p className="text-xs text-gray-500 mt-1">{doc.category} • {doc.year}</p>
                         </div>
-                        <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-[#0D225C]" />
+                        <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-[#2e3192]" />
                       </button>
                     ))}
                   </div>

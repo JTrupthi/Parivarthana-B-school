@@ -80,12 +80,12 @@ With warm regards and best wishes for your success.`
   ];
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA]">
+    <div className="min-h-screen bg-[#f8f9fa]">
       {/* Hero Section */}
-      <section className="relative bg-[#0D225C] text-white py-20">
+      <section className="relative bg-[#2e3192] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#CCB156] rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#fdb913] rounded-full mb-6">
               <MessageCircle className="h-8 w-8 text-white" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Principal's Message</h1>
@@ -102,31 +102,31 @@ With warm regards and best wishes for your success.`
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Principal's Profile */}
             <div className="lg:col-span-1">
-              <div className="bg-[#F0F0EA] rounded-xl p-8 sticky top-8">
+              <div className="bg-[#f8f9fa] rounded-xl p-8 sticky top-8">
                 <div className="text-center mb-6">
                   <img
                     src={getAssetUrl('PBSPrincipal.jpg')}
                     alt={principalInfo.name}
-                    className="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-[#CCB156]"
+                    className="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-[#fdb913]"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = getAssetUrl('RaghunandanG.jpg');
                     }}
                   />
-                  <h3 className="text-2xl font-bold text-[#0D225C] mb-2">{principalInfo.name}</h3>
-                  <p className="text-[#CCB156] font-semibold mb-4">{principalInfo.position}</p>
+                  <h3 className="text-2xl font-bold text-[#2e3192] mb-2">{principalInfo.name}</h3>
+                  <p className="text-[#fdb913] font-semibold mb-4">{principalInfo.position}</p>
                 </div>
 
                 <div className="space-y-4 mb-6">
                   <div>
-                    <h4 className="font-semibold text-[#0D225C] mb-2">Qualifications</h4>
+                    <h4 className="font-semibold text-[#2e3192] mb-2">Qualifications</h4>
                     <p className="text-[#747488] text-sm">{principalInfo.qualifications}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#0D225C] mb-2">Experience</h4>
+                    <h4 className="font-semibold text-[#2e3192] mb-2">Experience</h4>
                     <p className="text-[#747488] text-sm">{principalInfo.experience}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#0D225C] mb-2">Specialization</h4>
+                    <h4 className="font-semibold text-[#2e3192] mb-2">Specialization</h4>
                     <p className="text-[#747488] text-sm">{principalInfo.specialization}</p>
                   </div>
                 </div>
@@ -134,25 +134,25 @@ With warm regards and best wishes for your success.`
                 <div className="space-y-3 pt-2 border-t border-gray-200">
                   <a
                     href={`mailto:${principalInfo.email}`}
-                    className="flex items-center space-x-3 text-gray-700 hover:text-[#0D225C] group transition-colors"
+                    className="flex items-center space-x-3 text-gray-700 hover:text-[#2e3192] group transition-colors"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-[#CCB156]/15 flex items-center justify-center group-hover:bg-[#CCB156] transition-colors">
-                      <Mail className="h-4 w-4 text-[#0D225C] group-hover:text-white transition-colors" />
+                    <div className="w-8 h-8 rounded-lg bg-[#fdb913]/15 flex items-center justify-center group-hover:bg-[#fdb913] transition-colors">
+                      <Mail className="h-4 w-4 text-[#2e3192] group-hover:text-white transition-colors" />
                     </div>
                     <span className="text-sm font-medium hover:underline">{principalInfo.email}</span>
                   </a>
                   <a
                     href={`tel:${principalInfo.phone.replace(/[^0-9+]/g, '')}`}
-                    className="flex items-center space-x-3 text-gray-700 hover:text-[#0D225C] group transition-colors"
+                    className="flex items-center space-x-3 text-gray-700 hover:text-[#2e3192] group transition-colors"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-[#CCB156]/15 flex items-center justify-center group-hover:bg-[#CCB156] transition-colors">
-                      <Phone className="h-4 w-4 text-[#0D225C] group-hover:text-white transition-colors" />
+                    <div className="w-8 h-8 rounded-lg bg-[#fdb913]/15 flex items-center justify-center group-hover:bg-[#fdb913] transition-colors">
+                      <Phone className="h-4 w-4 text-[#2e3192] group-hover:text-white transition-colors" />
                     </div>
                     <span className="text-sm font-medium hover:underline">{principalInfo.phone}</span>
                   </a>
                   <div className="flex items-center space-x-3 text-gray-700">
-                    <div className="w-8 h-8 rounded-lg bg-[#CCB156]/15 flex items-center justify-center">
-                      <MapPin className="h-4 w-4 text-[#0D225C]" />
+                    <div className="w-8 h-8 rounded-lg bg-[#fdb913]/15 flex items-center justify-center">
+                      <MapPin className="h-4 w-4 text-[#2e3192]" />
                     </div>
                     <span className="text-sm">PBS Campus, Mysore</span>
                   </div>
@@ -164,7 +164,7 @@ With warm regards and best wishes for your success.`
             {/* Principal's Message */}
             <div className="lg:col-span-2">
               <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h2 className="text-3xl font-bold text-[#0D225C] mb-8">Message from the Principal</h2>
+                <h2 className="text-3xl font-bold text-[#2e3192] mb-8">Message from the Principal</h2>
                 <div className="prose prose-lg max-w-none">
                   {principalInfo.message.split('\n\n').map((paragraph, index) => (
                     <p key={index} className="text-[#747488] leading-relaxed mb-6">
@@ -173,13 +173,13 @@ With warm regards and best wishes for your success.`
                   ))}
                 </div>
                 
-                <div className="mt-8 p-6 bg-[#F0F0EA] rounded-lg">
+                <div className="mt-8 p-6 bg-[#f8f9fa] rounded-lg">
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-[#CCB156] rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#fdb913] rounded-full flex items-center justify-center">
                       <Heart className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#0D225C]">Dr. Raghunandan G</h4>
+                      <h4 className="font-bold text-[#2e3192]">Dr. Raghunandan G</h4>
                       <p className="text-[#747488] text-sm">Principal, Parivarthana Business School</p>
                     </div>
                   </div>
@@ -191,10 +191,10 @@ With warm regards and best wishes for your success.`
       </section>
 
       {/* Principal's Vision */}
-      <section className="py-20 bg-[#F0F0EA]">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Principal's Focus Areas</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Principal's Focus Areas</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Our commitment to technical education and practical skill development for employment readiness
             </p>
@@ -203,10 +203,10 @@ With warm regards and best wishes for your success.`
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {visionPoints.map((point, index) => (
               <div key={index} className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="inline-flex items-center justify-center w-14 h-14 bg-[#CCB156] rounded-lg mb-4">
+                <div className="inline-flex items-center justify-center w-14 h-14 bg-[#fdb913] rounded-lg mb-4">
                   <point.icon className="h-7 w-7 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-[#0D225C] mb-3">{point.title}</h4>
+                <h4 className="text-xl font-bold text-[#2e3192] mb-3">{point.title}</h4>
                 <p className="text-[#747488] leading-relaxed">{point.description}</p>
               </div>
             ))}
@@ -218,7 +218,7 @@ With warm regards and best wishes for your success.`
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0D225C] mb-4">Recognition & Achievements</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Recognition & Achievements</h2>
             <p className="text-xl text-[#747488] max-w-3xl mx-auto">
               Celebrating excellence in educational leadership and academic contribution
             </p>
@@ -226,12 +226,12 @@ With warm regards and best wishes for your success.`
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
-              <div key={index} className="bg-[#F0F0EA] rounded-xl p-6 text-center hover:shadow-lg transition-shadow duration-300">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0D225C] rounded-lg mb-4">
+              <div key={index} className="bg-[#f8f9fa] rounded-xl p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#2e3192] rounded-lg mb-4">
                   <achievement.icon className="h-6 w-6 text-white" />
                 </div>
-                <div className="text-[#CCB156] font-bold text-sm mb-2">{achievement.year}</div>
-                <h4 className="text-lg font-bold text-[#0D225C] mb-3">{achievement.title}</h4>
+                <div className="text-[#fdb913] font-bold text-sm mb-2">{achievement.year}</div>
+                <h4 className="text-lg font-bold text-[#2e3192] mb-3">{achievement.title}</h4>
                 <p className="text-[#747488] text-sm leading-relaxed">{achievement.description}</p>
               </div>
             ))}

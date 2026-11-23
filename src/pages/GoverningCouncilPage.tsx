@@ -178,22 +178,22 @@ const GoverningCouncilPage: React.FC = () => {
   const getRoleBadgeStyle = (role: CouncilMember['councilRole']) => {
     switch (role) {
       case 'Chairperson':
-        return 'bg-[#CCB156] text-[#0D225C] font-bold border border-[#CCB156] shadow-sm';
+        return 'bg-[#fdb913] text-[#2e3192] font-bold border border-[#fdb913] shadow-sm';
       case 'Principal':
-        return 'bg-[#0D225C] text-[#CCB156] font-bold border border-[#0D225C] shadow-sm';
+        return 'bg-[#2e3192] text-[#fdb913] font-bold border border-[#2e3192] shadow-sm';
       case 'Member':
       default:
-        return 'bg-blue-50 text-[#0D225C] font-semibold border border-blue-200';
+        return 'bg-blue-50 text-[#2e3192] font-semibold border border-blue-200';
     }
   };
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA] font-sans">
+    <div className="min-h-screen bg-[#f8f9fa] font-sans">
       {/* Hero Section */}
-      <section className="relative bg-[#0D225C] text-white py-20">
+      <section className="relative bg-[#2e3192] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#CCB156]/20 text-[#CCB156] border border-[#CCB156]/30 mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#fdb913]/20 text-[#fdb913] border border-[#fdb913]/30 mb-4">
               Institutional Governance
             </span>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Governing Council</h1>
@@ -209,15 +209,15 @@ const GoverningCouncilPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-5 text-[#747488]">
-              <div className="flex items-center space-x-2 text-[#0D225C] font-semibold text-sm uppercase tracking-wider">
-                <Building2 className="h-5 w-5 text-[#CCB156]" />
+              <div className="flex items-center space-x-2 text-[#2e3192] font-semibold text-sm uppercase tracking-wider">
+                <Building2 className="h-5 w-5 text-[#fdb913]" />
                 <span>Apex Decision-Making Body</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C] leading-tight">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192] leading-tight">
                 About the Governing Council
               </h2>
               <p className="text-base md:text-lg leading-relaxed">
-                The Governing Council of <strong className="text-[#0D225C]">Parivarthana Business School</strong> serves as the apex decision-making body responsible for the overall governance, strategic vision, and operational excellence of the institution. Comprising visionary educational leaders, university vice-chancellors, eminent senior professors, and distinguished corporate executives, the council steers PBS towards academic distinction.
+                The Governing Council of <strong className="text-[#2e3192]">Parivarthana Business School</strong> serves as the apex decision-making body responsible for the overall governance, strategic vision, and operational excellence of the institution. Comprising visionary educational leaders, university vice-chancellors, eminent senior professors, and distinguished corporate executives, the council steers PBS towards academic distinction.
               </p>
               <p className="text-base md:text-lg leading-relaxed">
                 Operating under the esteemed guidance of the Board of Trustees of Oom Shreenikethana Trust, the council regularly convenes to review academic standards, policy compliance, infrastructure development, and student-centric initiatives.
@@ -234,14 +234,14 @@ const GoverningCouncilPage: React.FC = () => {
                     (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=800&q=80';
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0D225C]/80 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2e3192]/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-gray-100 flex items-center justify-between">
                   <div>
-                    <div className="text-2xl font-bold text-[#0D225C]">14 Distinguished Members</div>
+                    <div className="text-2xl font-bold text-[#2e3192]">14 Distinguished Members</div>
                     <div className="text-xs text-[#747488]">Leading Academic & Industry Experts</div>
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-[#CCB156]/20 flex items-center justify-center text-[#0D225C] font-bold">
-                    <CheckCircle2 className="h-6 w-6 text-[#CCB156]" />
+                  <div className="w-10 h-10 rounded-full bg-[#fdb913]/20 flex items-center justify-center text-[#2e3192] font-bold">
+                    <CheckCircle2 className="h-6 w-6 text-[#fdb913]" />
                   </div>
                 </div>
               </div>
@@ -251,13 +251,13 @@ const GoverningCouncilPage: React.FC = () => {
       </section>
 
       {/* Council Members Card Grid */}
-      <section className="py-20 bg-[#F0F0EA]">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-xs font-bold text-[#CCB156] uppercase tracking-wider block mb-2">
+            <span className="text-xs font-bold text-[#fdb913] uppercase tracking-wider block mb-2">
               Leadership Directory
             </span>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-[#0D225C]">Council Members</h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold text-[#2e3192]">Council Members</h2>
             <p className="text-[#747488] text-base md:text-lg mt-3 max-w-2xl mx-auto">
               Meet the 14 distinguished leaders, vice-chancellors, and corporate executives constituting the Governing Council of PBS
             </p>
@@ -272,7 +272,7 @@ const GoverningCouncilPage: React.FC = () => {
               >
                 <div>
                   {/* Photo Container */}
-                  <div className="relative h-64 w-full bg-gradient-to-tr from-[#0D225C] to-[#1a388a] overflow-hidden">
+                  <div className="relative h-64 w-full bg-gradient-to-tr from-[#2e3192] to-[#1a388a] overflow-hidden">
                     {member.image ? (
                       <img
                         src={getAssetUrl(member.image)}
@@ -286,7 +286,7 @@ const GoverningCouncilPage: React.FC = () => {
                     
                     {/* Fallback Initial */}
                     <div
-                      className="w-full h-full bg-[#0D225C] text-[#CCB156] flex items-center justify-center text-4xl font-extrabold"
+                      className="w-full h-full bg-[#2e3192] text-[#fdb913] flex items-center justify-center text-4xl font-extrabold"
                       style={{ display: member.image ? 'none' : 'flex' }}
                     >
                       {member.name
@@ -306,10 +306,10 @@ const GoverningCouncilPage: React.FC = () => {
 
                   {/* Body Content */}
                   <div className="p-5 space-y-2">
-                    <h3 className="text-lg font-bold text-[#0D225C] leading-snug group-hover:text-[#CCB156] transition-colors">
+                    <h3 className="text-lg font-bold text-[#2e3192] leading-snug group-hover:text-[#fdb913] transition-colors">
                       {member.name}
                     </h3>
-                    <p className="text-xs font-semibold text-[#CCB156] uppercase tracking-wider leading-relaxed">
+                    <p className="text-xs font-semibold text-[#fdb913] uppercase tracking-wider leading-relaxed">
                       {member.designation}
                     </p>
                     <p className="text-xs text-[#747488] leading-relaxed pt-1">
@@ -341,10 +341,10 @@ const GoverningCouncilPage: React.FC = () => {
       <section className="py-20 bg-white border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-xs font-bold text-[#CCB156] uppercase tracking-wider block mb-1">
+            <span className="text-xs font-bold text-[#fdb913] uppercase tracking-wider block mb-1">
               Core Mandate
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192] mb-4">
               Key Responsibilities
             </h2>
             <p className="text-lg text-[#747488] max-w-3xl mx-auto font-light">
@@ -356,12 +356,12 @@ const GoverningCouncilPage: React.FC = () => {
             {responsibilities.map((responsibility, index) => (
               <div
                 key={index}
-                className="bg-[#F0F0EA] rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#CCB156] hover:-translate-y-1"
+                className="bg-[#f8f9fa] rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#fdb913] hover:-translate-y-1"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0D225C] text-[#CCB156] rounded-xl mb-5 shadow-sm">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#2e3192] text-[#fdb913] rounded-xl mb-5 shadow-sm">
                   <responsibility.icon className="h-6 w-6" />
                 </div>
-                <h4 className="text-xl font-bold text-[#0D225C] mb-2.5">
+                <h4 className="text-xl font-bold text-[#2e3192] mb-2.5">
                   {responsibility.title}
                 </h4>
                 <p className="text-[#747488] text-sm leading-relaxed">

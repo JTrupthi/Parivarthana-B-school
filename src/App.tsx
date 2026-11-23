@@ -122,8 +122,8 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode; requiredRoles?: stri
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[#F0F0EA] flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#0D225C]"></div>
+      <div className="min-h-screen bg-[#f8f9fa] flex items-center justify-center">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#2e3192]"></div>
       </div>
     );
   }
@@ -301,8 +301,8 @@ const MainWebsite: React.FC = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[#F0F0EA] flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#0D225C]"></div>
+      <div className="min-h-screen bg-[#f8f9fa] flex items-center justify-center">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#2e3192]"></div>
       </div>
     );
   }
@@ -383,9 +383,9 @@ const MainWebsite: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA]">
+    <div className="min-h-screen bg-[#f8f9fa]">
       <Header currentPage={currentPage} onNavigate={handleNavigate} />
-      <main className="pt-20">
+      <main className="pt-[92px] sm:pt-[106px]">
         {renderPage()}
       </main>
       <Footer onNavigate={handleNavigate} />
@@ -411,13 +411,13 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { has
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-[#F0F0EA] flex items-center justify-center p-4">
+        <div className="min-h-screen bg-[#f8f9fa] flex items-center justify-center p-4">
           <div className="text-center">
             <h1 className="text-2xl font-bold text-red-600 mb-4">Oops! Something went wrong</h1>
             <p className="text-gray-600 mb-4">{this.state.error?.message}</p>
             <button 
               onClick={() => window.location.reload()}
-              className="px-4 py-2 bg-[#0D225C] text-white rounded hover:bg-opacity-90"
+              className="px-4 py-2 bg-[#2e3192] text-white rounded hover:bg-opacity-90"
             >
               Reload Page
             </button>

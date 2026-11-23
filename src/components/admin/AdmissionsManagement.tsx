@@ -57,7 +57,7 @@ const AdmissionsManagement: React.FC = () => {
               <FileSpreadsheet className="h-3.5 w-3.5 text-emerald-600" />
               <span>Official Google Sheet Admission Sync</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0D225C] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2e3192] tracking-tight">
               Admissions & Enquiry Database
             </h2>
             <p className="text-gray-500 text-sm mt-1 max-w-xl">
@@ -68,7 +68,7 @@ const AdmissionsManagement: React.FC = () => {
           <div className="flex flex-wrap items-center gap-3">
             <button
               onClick={() => setRefreshKey(prev => prev + 1)}
-              className="p-3 bg-gray-50 hover:bg-gray-100 text-[#0D225C] rounded-2xl border border-gray-200 transition-all hover:rotate-180 duration-500"
+              className="p-3 bg-gray-50 hover:bg-gray-100 text-[#2e3192] rounded-2xl border border-gray-200 transition-all hover:rotate-180 duration-500"
               title="Refresh Embedded Sheet"
             >
               <RefreshCw className="h-4 w-4" />
@@ -94,17 +94,17 @@ const AdmissionsManagement: React.FC = () => {
             </div>
             <div>
               <p className="text-xs font-semibold text-gray-500">Connected Sheet</p>
-              <p className="text-sm font-extrabold text-[#0D225C] truncate max-w-[200px]">PBS Admission Enquiries</p>
+              <p className="text-sm font-extrabold text-[#2e3192] truncate max-w-[200px]">PBS Admission Enquiries</p>
             </div>
           </div>
 
           <div className="bg-gray-50/70 p-4 rounded-2xl border border-gray-100 flex items-center space-x-3.5">
-            <div className="h-10 w-10 rounded-xl bg-[#0D225C] text-white flex items-center justify-center font-bold">
-              <Sparkles className="h-5 w-5 text-[#CCB156]" />
+            <div className="h-10 w-10 rounded-xl bg-[#2e3192] text-white flex items-center justify-center font-bold">
+              <Sparkles className="h-5 w-5 text-[#fdb913]" />
             </div>
             <div>
               <p className="text-xs font-semibold text-gray-500">Live Recording</p>
-              <p className="text-sm font-extrabold text-[#0D225C]">Instant Webhook Active</p>
+              <p className="text-sm font-extrabold text-[#2e3192]">Instant Webhook Active</p>
             </div>
           </div>
 
@@ -114,7 +114,7 @@ const AdmissionsManagement: React.FC = () => {
             </div>
             <div>
               <p className="text-xs font-semibold text-gray-500">Data Security</p>
-              <p className="text-sm font-extrabold text-[#0D225C]">Google Cloud Encrypted</p>
+              <p className="text-sm font-extrabold text-[#2e3192]">Google Cloud Encrypted</p>
             </div>
           </div>
         </div>
@@ -127,26 +127,26 @@ const AdmissionsManagement: React.FC = () => {
           <div className="flex items-center space-x-3">
             <div className="flex items-center space-x-2">
               <span className="h-2.5 w-2.5 rounded-full bg-green-500 animate-pulse" />
-              <span className="font-extrabold text-[#0D225C]">Live Admissions Sheet View</span>
+              <span className="font-extrabold text-[#2e3192]">Live Admissions Sheet View</span>
             </div>
 
             {/* View Mode Switcher */}
             <div className="hidden sm:flex items-center bg-gray-200/70 rounded-xl p-0.5">
               <button
                 onClick={() => setEmbedMode('htmlembed')}
-                className={`px-3 py-1 rounded-lg font-bold transition-colors ${embedMode === 'htmlembed' ? 'bg-white text-[#0D225C] shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`px-3 py-1 rounded-lg font-bold transition-colors ${embedMode === 'htmlembed' ? 'bg-white text-[#2e3192] shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 HTML Embed
               </button>
               <button
                 onClick={() => setEmbedMode('minimal')}
-                className={`px-3 py-1 rounded-lg font-bold transition-colors ${embedMode === 'minimal' ? 'bg-white text-[#0D225C] shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`px-3 py-1 rounded-lg font-bold transition-colors ${embedMode === 'minimal' ? 'bg-white text-[#2e3192] shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 Interactive
               </button>
               <button
                 onClick={() => setEmbedMode('pubhtml')}
-                className={`px-3 py-1 rounded-lg font-bold transition-colors ${embedMode === 'pubhtml' ? 'bg-white text-[#0D225C] shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`px-3 py-1 rounded-lg font-bold transition-colors ${embedMode === 'pubhtml' ? 'bg-white text-[#2e3192] shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 Public View
               </button>
@@ -166,7 +166,7 @@ const AdmissionsManagement: React.FC = () => {
               href={sheetUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-1 px-3 py-1.5 bg-white border border-gray-200 hover:bg-gray-50 rounded-xl text-[#0D225C] font-bold transition-colors"
+              className="flex items-center space-x-1 px-3 py-1.5 bg-white border border-gray-200 hover:bg-gray-50 rounded-xl text-[#2e3192] font-bold transition-colors"
               title="Open in new window"
             >
               <span>Full Tab</span>

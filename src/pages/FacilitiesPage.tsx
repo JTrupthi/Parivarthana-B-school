@@ -33,9 +33,9 @@ const FacilitiesPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA]">
+    <div className="min-h-screen bg-[#f8f9fa]">
       {/* Hero Section */}
-      <section className="bg-[#0D225C] text-white py-20">
+      <section className="bg-[#2e3192] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Facilities</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
@@ -48,17 +48,17 @@ const FacilitiesPage: React.FC = () => {
       <section id="library" className="py-20 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-8">
-            <div className="bg-[#0D225C] p-4 rounded-lg">
+            <div className="bg-[#2e3192] p-4 rounded-lg">
               <BookOpen className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">
               Library & Information Centre
             </h2>
           </div>
 
           {/* Overview */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Overview</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Overview</h3>
             <p className="text-[#747488] leading-relaxed mb-4">
               The library at Parivarthana Business School plays a vital role in supporting the curriculum needs of students and faculty through its comprehensive collections and services. Our library operates on an open access system, allowing users to browse and select materials freely.
             </p>
@@ -69,11 +69,11 @@ const FacilitiesPage: React.FC = () => {
 
           {/* Library Committee */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Library Committee</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Library Committee</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-[#0D225C] text-white">
+                  <tr className="bg-[#2e3192] text-white">
                     <th className="px-6 py-3 text-left">Sl. No.</th>
                     <th className="px-6 py-3 text-left">Name</th>
                     <th className="px-6 py-3 text-left">Designation</th>
@@ -95,16 +95,16 @@ const FacilitiesPage: React.FC = () => {
           {/* Working Hours */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
             <div className="flex items-center space-x-3 mb-6">
-              <Clock className="h-6 w-6 text-[#CCB156]" />
-              <h3 className="text-2xl font-bold text-[#0D225C]">Working Hours</h3>
+              <Clock className="h-6 w-6 text-[#fdb913]" />
+              <h3 className="text-2xl font-bold text-[#2e3192]">Working Hours</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-[#F0F0EA] p-4 rounded-lg">
-                <p className="font-semibold text-[#0D225C] mb-2">Monday - Friday</p>
+              <div className="bg-[#f8f9fa] p-4 rounded-lg">
+                <p className="font-semibold text-[#2e3192] mb-2">Monday - Friday</p>
                 <p className="text-[#747488]">9:30 AM - 5:15 PM</p>
               </div>
-              <div className="bg-[#F0F0EA] p-4 rounded-lg">
-                <p className="font-semibold text-[#0D225C] mb-2">Saturday</p>
+              <div className="bg-[#f8f9fa] p-4 rounded-lg">
+                <p className="font-semibold text-[#2e3192] mb-2">Saturday</p>
                 <p className="text-[#747488]">9:30 AM - 1:30 PM</p>
               </div>
             </div>
@@ -112,25 +112,25 @@ const FacilitiesPage: React.FC = () => {
 
           {/* Services */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Library Services</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Library Services</h3>
 
             <div className="space-y-6">
               <div>
-                <h4 className="text-xl font-semibold text-[#0D225C] mb-3">Lending Service</h4>
+                <h4 className="text-xl font-semibold text-[#2e3192] mb-3">Lending Service</h4>
                 <p className="text-[#747488] leading-relaxed">
                   Books are issued for 10 days for students and for one semester for faculty members. Books can be reissued if they are not in demand by other users. This flexible system ensures maximum access to resources while maintaining availability for all users.
                 </p>
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-[#0D225C] mb-3">Reference Service</h4>
+                <h4 className="text-xl font-semibold text-[#2e3192] mb-3">Reference Service</h4>
                 <p className="text-[#747488] leading-relaxed">
                   Reference materials are available for in-library use only. These specialized resources include encyclopedias, dictionaries, handbooks, and other essential reference works that support academic research and learning.
                 </p>
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-[#0D225C] mb-3">Periodicals Service</h4>
+                <h4 className="text-xl font-semibold text-[#2e3192] mb-3">Periodicals Service</h4>
                 <p className="text-[#747488] leading-relaxed">
                   The library subscribes to a variety of print journals, magazines, and newspapers to support teaching and research activities. These periodicals cover a wide range of subjects relevant to our academic programs.
                 </p>
@@ -140,7 +140,7 @@ const FacilitiesPage: React.FC = () => {
 
           {/* Journal Subscription Process */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Journal Subscription Process</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Journal Subscription Process</h3>
             <div className="grid md:grid-cols-5 gap-4">
               {[
                 { step: 1, title: 'Recommendations', desc: 'Faculty submit journal requests' },
@@ -150,10 +150,10 @@ const FacilitiesPage: React.FC = () => {
                 { step: 5, title: 'Access', desc: 'Journals made available' },
               ].map((item) => (
                 <div key={item.step} className="text-center">
-                  <div className="bg-[#CCB156] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+                  <div className="bg-[#fdb913] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
                     {item.step}
                   </div>
-                  <h4 className="font-semibold text-[#0D225C] mb-2">{item.title}</h4>
+                  <h4 className="font-semibold text-[#2e3192] mb-2">{item.title}</h4>
                   <p className="text-sm text-[#747488]">{item.desc}</p>
                 </div>
               ))}
@@ -163,19 +163,19 @@ const FacilitiesPage: React.FC = () => {
           {/* Loss of Books Policy */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
             <div className="flex items-center space-x-3 mb-6">
-              <Shield className="h-6 w-6 text-[#CCB156]" />
-              <h3 className="text-2xl font-bold text-[#0D225C]">Loss of Books Policy</h3>
+              <Shield className="h-6 w-6 text-[#fdb913]" />
+              <h3 className="text-2xl font-bold text-[#2e3192]">Loss of Books Policy</h3>
             </div>
             <p className="text-[#747488] leading-relaxed mb-4">
               In case of loss or damage to library books, users are required to:
             </p>
             <ul className="space-y-2 text-[#747488]">
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-[#CCB156] rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[#fdb913] rounded-full mt-2 flex-shrink-0"></div>
                 <span>Replace the lost or damaged book with a new copy of the same edition.</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-[#CCB156] rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[#fdb913] rounded-full mt-2 flex-shrink-0"></div>
                 <span>Pay three times the cost of the book plus Rs. 50 as processing fee.</span>
               </li>
             </ul>
@@ -183,7 +183,7 @@ const FacilitiesPage: React.FC = () => {
 
           {/* Rules & Regulations */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Rules & Regulations</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Rules & Regulations</h3>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 'No personal belongings are allowed inside the library',
@@ -196,7 +196,7 @@ const FacilitiesPage: React.FC = () => {
                 'Follow the librarian\'s instructions at all times',
               ].map((rule, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#CCB156] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#fdb913] rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-[#747488]">{rule}</span>
                 </div>
               ))}
@@ -205,11 +205,11 @@ const FacilitiesPage: React.FC = () => {
 
           {/* Library Collection */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Library Collection</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Library Collection</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-[#0D225C] text-white">
+                  <tr className="bg-[#2e3192] text-white">
                     <th className="px-6 py-3 text-left">Type of Document</th>
                     <th className="px-6 py-3 text-left">Numbers</th>
                   </tr>
@@ -228,7 +228,7 @@ const FacilitiesPage: React.FC = () => {
 
           {/* Faculty Services */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Services for Faculty</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Services for Faculty</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 'Reference Service',
@@ -238,8 +238,8 @@ const FacilitiesPage: React.FC = () => {
                 'Orientation Programs',
                 'Research Support',
               ].map((service, index) => (
-                <div key={index} className="bg-[#F0F0EA] p-4 rounded-lg">
-                  <p className="text-[#0D225C] font-semibold">{service}</p>
+                <div key={index} className="bg-[#f8f9fa] p-4 rounded-lg">
+                  <p className="text-[#2e3192] font-semibold">{service}</p>
                 </div>
               ))}
             </div>
@@ -247,7 +247,7 @@ const FacilitiesPage: React.FC = () => {
 
           {/* Librarian Profile */}
           <div className="bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Librarian</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Librarian</h3>
             <div className="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8">
               <div className="flex-shrink-0">
                 <img
@@ -257,19 +257,19 @@ const FacilitiesPage: React.FC = () => {
                 />
               </div>
               <div className="flex-1">
-                <h4 className="text-xl font-bold text-[#0D225C] mb-4">Mr. Madesha</h4>
+                <h4 className="text-xl font-bold text-[#2e3192] mb-4">Mr. Madesha</h4>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <p className="text-sm text-[#747488] mb-1">Designation</p>
-                    <p className="text-[#0D225C] font-semibold">Librarian</p>
+                    <p className="text-[#2e3192] font-semibold">Librarian</p>
                   </div>
                   <div>
                     <p className="text-sm text-[#747488] mb-1">Qualification</p>
-                    <p className="text-[#0D225C] font-semibold">M.Lib.I.Sc.</p>
+                    <p className="text-[#2e3192] font-semibold">M.Lib.I.Sc.</p>
                   </div>
                   <div>
                     <p className="text-sm text-[#747488] mb-1">Experience</p>
-                    <p className="text-[#0D225C] font-semibold">7 years</p>
+                    <p className="text-[#2e3192] font-semibold">7 years</p>
                   </div>
                 </div>
               </div>
@@ -282,26 +282,26 @@ const FacilitiesPage: React.FC = () => {
       <section id="sports" className="py-20 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-8">
-            <div className="bg-[#CCB156] p-4 rounded-lg">
+            <div className="bg-[#fdb913] p-4 rounded-lg">
               <Trophy className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">Sports</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">Sports</h2>
           </div>
 
           {/* Overview */}
-          <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Promoting Physical & Mental Well-being</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Promoting Physical & Mental Well-being</h3>
             <p className="text-[#747488] leading-relaxed mb-6">
               Sports play a crucial role in maintaining physical and mental health among students. At Parivarthana Business School, we believe in the holistic development of our students, which includes encouraging active participation in sports and physical activities.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-xl font-semibold text-[#0D225C] mb-4">Indoor Facilities</h4>
+                <h4 className="text-xl font-semibold text-[#2e3192] mb-4">Indoor Facilities</h4>
                 <div className="space-y-3">
                   {['Chess', 'Carrom', 'Table Tennis'].map((sport, index) => (
                     <div key={index} className="flex items-center space-x-3 bg-white p-3 rounded-lg">
-                      <div className="w-2 h-2 bg-[#CCB156] rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#fdb913] rounded-full"></div>
                       <span className="text-[#747488] font-medium">{sport}</span>
                     </div>
                   ))}
@@ -309,11 +309,11 @@ const FacilitiesPage: React.FC = () => {
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-[#0D225C] mb-4">Outdoor Facilities</h4>
+                <h4 className="text-xl font-semibold text-[#2e3192] mb-4">Outdoor Facilities</h4>
                 <div className="space-y-3">
                   {['Cricket', 'Football', 'Athletics'].map((sport, index) => (
                     <div key={index} className="flex items-center space-x-3 bg-white p-3 rounded-lg">
-                      <div className="w-2 h-2 bg-[#CCB156] rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#fdb913] rounded-full"></div>
                       <span className="text-[#747488] font-medium">{sport}</span>
                     </div>
                   ))}
@@ -323,24 +323,24 @@ const FacilitiesPage: React.FC = () => {
           </div>
 
           {/* Events */}
-          <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Sports Events & Achievements</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Sports Events & Achievements</h3>
 
             <div className="space-y-8">
               {/* Intra-College Events */}
               <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                 <div className="grid md:grid-cols-3 gap-0">
                   <div className="md:col-span-2 p-6">
-                    <h4 className="text-xl font-semibold text-[#0D225C] mb-4">Intra-College Events</h4>
+                    <h4 className="text-xl font-semibold text-[#2e3192] mb-4">Intra-College Events</h4>
                     <div className="space-y-4">
                       <div>
-                        <h5 className="font-semibold text-[#0D225C] mb-2">30-Yard Cricket Tournament</h5>
+                        <h5 className="font-semibold text-[#2e3192] mb-2">30-Yard Cricket Tournament</h5>
                         <p className="text-[#747488]">
                           Held annually on August 29<sup>th</sup> (National Sports Day), this tournament brings together students from all programs to compete in an exciting cricket format.
                         </p>
                       </div>
                       <div>
-                        <h5 className="font-semibold text-[#0D225C] mb-2">Annual Sports Day</h5>
+                        <h5 className="font-semibold text-[#2e3192] mb-2">Annual Sports Day</h5>
                         <p className="text-[#747488]">
                           A grand event where all students participate in various athletic competitions, team sports, and fun activities, promoting sportsmanship and college spirit.
                         </p>
@@ -368,9 +368,9 @@ const FacilitiesPage: React.FC = () => {
                     />
                   </div>
                   <div className="md:col-span-2 p-6 md:order-1">
-                    <h4 className="text-xl font-semibold text-[#0D225C] mb-4">Inter-Collegiate Events</h4>
+                    <h4 className="text-xl font-semibold text-[#2e3192] mb-4">Inter-Collegiate Events</h4>
                     <div>
-                      <h5 className="font-semibold text-[#0D225C] mb-2">Mysore City Table Tennis Tournament</h5>
+                      <h5 className="font-semibold text-[#2e3192] mb-2">Mysore City Table Tennis Tournament</h5>
                       <p className="text-[#747488]">
                         Our students regularly participate in the prestigious Mysore City Table Tennis Tournament, competing against teams from colleges across the city.
                       </p>
@@ -383,9 +383,9 @@ const FacilitiesPage: React.FC = () => {
               <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                 <div className="grid md:grid-cols-3 gap-0">
                   <div className="md:col-span-2 p-6">
-                    <h4 className="text-xl font-semibold text-[#0D225C] mb-4">University Level Achievements</h4>
-                    <div className="bg-[#CCB156]/10 border-l-4 border-[#CCB156] p-4 rounded">
-                      <p className="text-[#0D225C] font-semibold mb-2">Gold Medal Winner</p>
+                    <h4 className="text-xl font-semibold text-[#2e3192] mb-4">University Level Achievements</h4>
+                    <div className="bg-[#fdb913]/10 border-l-4 border-[#fdb913] p-4 rounded">
+                      <p className="text-[#2e3192] font-semibold mb-2">Gold Medal Winner</p>
                       <p className="text-[#747488]">
                         <span className="font-semibold">Varshith L.</span> (MBA 1st Year) won a gold medal in weightlifting at the university level competition, bringing pride to our institution.
                       </p>
@@ -406,17 +406,17 @@ const FacilitiesPage: React.FC = () => {
       </section>
 
       {/* Transportation Section */}
-      <section id="transportation" className="py-20 bg-[#F0F0EA] scroll-mt-20">
+      <section id="transportation" className="py-20 bg-[#f8f9fa] scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-8">
             <div className="bg-green-600 p-4 rounded-lg">
               <Bus className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">Transportation</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">Transportation</h2>
           </div>
 
           <div className="bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Safe & Reliable Transport Services</h3>
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Safe & Reliable Transport Services</h3>
 
             <div className="space-y-6">
               <p className="text-[#747488] leading-relaxed text-lg">
@@ -424,8 +424,8 @@ const FacilitiesPage: React.FC = () => {
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-[#F0F0EA] p-6 rounded-lg">
-                  <h4 className="font-semibold text-[#0D225C] mb-3">Coverage Area</h4>
+                <div className="bg-[#f8f9fa] p-6 rounded-lg">
+                  <h4 className="font-semibold text-[#2e3192] mb-3">Coverage Area</h4>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-green-600 rounded-full"></div>
@@ -442,8 +442,8 @@ const FacilitiesPage: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="bg-[#F0F0EA] p-6 rounded-lg">
-                  <h4 className="font-semibold text-[#0D225C] mb-3">Fleet Information</h4>
+                <div className="bg-[#f8f9fa] p-6 rounded-lg">
+                  <h4 className="font-semibold text-[#2e3192] mb-3">Fleet Information</h4>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-green-600 rounded-full"></div>
@@ -458,7 +458,7 @@ const FacilitiesPage: React.FC = () => {
               </div>
 
               <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded">
-                <h4 className="font-semibold text-[#0D225C] mb-3">Safety Features</h4>
+                <h4 className="font-semibold text-[#2e3192] mb-3">Safety Features</h4>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-green-600 rounded-full"></div>
@@ -482,11 +482,11 @@ const FacilitiesPage: React.FC = () => {
             <div className="bg-blue-600 p-4 rounded-lg">
               <Home className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0D225C]">Hostel</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3192]">Hostel</h2>
           </div>
 
-          <div className="bg-[#F0F0EA] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#0D225C] mb-6">Home Away From Home</h3>
+          <div className="bg-[#f8f9fa] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-[#2e3192] mb-6">Home Away From Home</h3>
 
             <div className="space-y-6">
               <p className="text-[#747488] leading-relaxed text-lg">
@@ -496,7 +496,7 @@ const FacilitiesPage: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Girls' Hostel */}
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-semibold text-[#0D225C] mb-4">Girls' Hostel</h4>
+                  <h4 className="text-xl font-semibold text-[#2e3192] mb-4">Girls' Hostel</h4>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
@@ -525,7 +525,7 @@ const FacilitiesPage: React.FC = () => {
 
                 {/* Boys' Hostel */}
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-semibold text-[#0D225C] mb-4">Boys' Hostel</h4>
+                  <h4 className="text-xl font-semibold text-[#2e3192] mb-4">Boys' Hostel</h4>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
@@ -555,7 +555,7 @@ const FacilitiesPage: React.FC = () => {
 
               {/* Facilities */}
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-semibold text-[#0D225C] mb-4">Hostel Features</h4>
+                <h4 className="text-xl font-semibold text-[#2e3192] mb-4">Hostel Features</h4>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {[
                     'Administrative Office',

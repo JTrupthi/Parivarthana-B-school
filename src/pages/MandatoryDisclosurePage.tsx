@@ -44,14 +44,14 @@ const MandatoryDisclosurePage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F0F0EA] font-sans">
+    <div className="min-h-screen flex flex-col bg-[#f8f9fa] font-sans">
       <main className="flex-grow pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#0D225C] via-[#143282] to-[#0D225C] rounded-3xl shadow-xl p-8 sm:p-10 mb-10 text-white relative overflow-hidden border border-[#CCB156]/30">
-            <div className="absolute top-0 right-0 w-96 h-full bg-[#CCB156]/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="bg-gradient-to-r from-[#2e3192] via-[#143282] to-[#2e3192] rounded-3xl shadow-xl p-8 sm:p-10 mb-10 text-white relative overflow-hidden border border-[#fdb913]/30">
+            <div className="absolute top-0 right-0 w-96 h-full bg-[#fdb913]/10 rounded-full blur-3xl pointer-events-none" />
             <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
-              <div className="inline-flex items-center space-x-2 bg-[#CCB156]/20 border border-[#CCB156]/40 px-4 py-1.5 rounded-full text-xs font-bold text-[#CCB156]">
+              <div className="inline-flex items-center space-x-2 bg-[#fdb913]/20 border border-[#fdb913]/40 px-4 py-1.5 rounded-full text-xs font-bold text-[#fdb913]">
                 <ShieldCheck className="h-4 w-4" />
                 <span>Statutory Compliance & AICTE Transparency</span>
               </div>
@@ -72,9 +72,9 @@ const MandatoryDisclosurePage: React.FC = () => {
               return (
                 <div key={pdf.id} className="bg-white rounded-3xl shadow-lg border border-gray-200/80 overflow-hidden">
                   {/* Document Card Header */}
-                  <div className="bg-gradient-to-r from-[#0D225C] to-[#16368C] px-6 sm:px-8 py-5 text-white flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                  <div className="bg-gradient-to-r from-[#2e3192] to-[#16368C] px-6 sm:px-8 py-5 text-white flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div className="flex items-center space-x-3.5">
-                      <div className="h-12 w-12 rounded-2xl bg-[#CCB156]/20 border border-[#CCB156]/40 flex items-center justify-center text-[#CCB156] flex-shrink-0">
+                      <div className="h-12 w-12 rounded-2xl bg-[#fdb913]/20 border border-[#fdb913]/40 flex items-center justify-center text-[#fdb913] flex-shrink-0">
                         <FileText className="h-6 w-6" />
                       </div>
                       <div>
@@ -86,7 +86,7 @@ const MandatoryDisclosurePage: React.FC = () => {
                     <div className="flex flex-wrap items-center gap-2.5">
                       <button
                         onClick={() => handleOpenInNewTab(pdf.file)}
-                        className="flex items-center space-x-1.5 px-4 py-2 bg-[#CCB156] hover:bg-[#bfa54d] text-[#0D225C] rounded-xl transition-all text-xs sm:text-sm font-bold shadow-md hover:shadow-lg cursor-pointer"
+                        className="flex items-center space-x-1.5 px-4 py-2 bg-[#fdb913] hover:bg-[#bfa54d] text-[#2e3192] rounded-xl transition-all text-xs sm:text-sm font-bold shadow-md hover:shadow-lg cursor-pointer"
                       >
                         <Eye className="w-4 h-4" />
                         <span>View Fullscreen</span>
@@ -121,21 +121,21 @@ const MandatoryDisclosurePage: React.FC = () => {
                     ) : (
                       <div className="flex flex-col items-center justify-center py-16 px-4 text-center">
                         <FileText className="w-16 h-16 text-gray-400 mb-4" />
-                        <h3 className="text-lg font-bold text-[#0D225C] mb-2">Unable to display PDF preview inline</h3>
+                        <h3 className="text-lg font-bold text-[#2e3192] mb-2">Unable to display PDF preview inline</h3>
                         <p className="text-gray-500 text-xs sm:text-sm mb-6 max-w-md">
                           Click below to open or download the complete official document directly.
                         </p>
                         <div className="flex space-x-3">
                           <button
                             onClick={() => handleOpenInNewTab(pdf.file)}
-                            className="flex items-center px-5 py-2.5 bg-[#0D225C] text-white rounded-xl font-bold text-xs sm:text-sm hover:bg-[#143282]"
+                            className="flex items-center px-5 py-2.5 bg-[#2e3192] text-white rounded-xl font-bold text-xs sm:text-sm hover:bg-[#143282]"
                           >
                             <ExternalLink className="w-4 h-4 mr-2" />
                             Open in New Tab
                           </button>
                           <button
                             onClick={() => handleDownload(pdf.file, `${pdf.title.replace(/\s+/g, '_')}.pdf`)}
-                            className="flex items-center px-5 py-2.5 bg-[#CCB156] text-[#0D225C] rounded-xl font-bold text-xs sm:text-sm hover:bg-[#bfa54d]"
+                            className="flex items-center px-5 py-2.5 bg-[#fdb913] text-[#2e3192] rounded-xl font-bold text-xs sm:text-sm hover:bg-[#bfa54d]"
                           >
                             <Download className="w-4 h-4 mr-2" />
                             Download PDF

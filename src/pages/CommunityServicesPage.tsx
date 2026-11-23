@@ -95,9 +95,9 @@ const CommunityServicesPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA]">
+    <div className="min-h-screen bg-[#f8f9fa]">
       {/* Hero Section */}
-      <section className="bg-[#0D225C] text-white py-20">
+      <section className="bg-[#2e3192] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Community Services</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
@@ -111,13 +111,13 @@ const CommunityServicesPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl p-8 shadow-lg mb-12">
             <div className="flex items-center space-x-3 mb-6">
-              <Heart className="h-8 w-8 text-[#CCB156]" />
-              <h2 className="text-3xl font-bold text-[#0D225C]">Institutional Social Responsibility (ISR)</h2>
+              <Heart className="h-8 w-8 text-[#fdb913]" />
+              <h2 className="text-3xl font-bold text-[#2e3192]">Institutional Social Responsibility (ISR)</h2>
             </div>
 
             {/* Introduction */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Introduction</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Introduction</h3>
               <p className="text-[#747488] leading-relaxed mb-3">
                 Institutional Social Responsibility (ISR) represents our commitment to ethical, socially responsible, and sustainable practices that extend beyond profit generation. ISR encompasses initiatives such as ethical business practices, environmental sustainability, philanthropy, community development, and meaningful social engagement.
               </p>
@@ -128,7 +128,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Purpose */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Purpose</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Purpose</h3>
               <p className="text-[#747488] leading-relaxed mb-3">
                 ISR integrates ethical, social, and environmental considerations into our institution's operations. Our goal is to make a positive societal impact, enhance stakeholder relationships, and contribute meaningfully to environmental sustainability.
               </p>
@@ -139,11 +139,11 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Objectives */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Objectives of ISR</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Objectives of ISR</h3>
               <ul className="space-y-3">
                 {isrObjectives.map((objective, index) => (
                   <li key={index} className="flex items-start space-x-3">
-                    <span className="text-[#CCB156] text-xl mt-1">•</span>
+                    <span className="text-[#fdb913] text-xl mt-1">•</span>
                     <span className="text-[#747488] leading-relaxed">{objective}</span>
                   </li>
                 ))}
@@ -152,11 +152,11 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Committee Composition */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Composition of ISR Committee</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Composition of ISR Committee</h3>
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="bg-[#0D225C] text-white">
+                    <tr className="bg-[#2e3192] text-white">
                       <th className="px-6 py-3 text-left">Members</th>
                       <th className="px-6 py-3 text-left">Designation</th>
                     </tr>
@@ -175,11 +175,11 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Functions and Responsibilities */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Functions and Responsibilities</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Functions and Responsibilities</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {isrFunctions.map((func, index) => (
-                  <div key={index} className="bg-[#F0F0EA] p-4 rounded-lg">
-                    <h4 className="font-semibold text-[#0D225C] mb-2">{func.title}</h4>
+                  <div key={index} className="bg-[#f8f9fa] p-4 rounded-lg">
+                    <h4 className="font-semibold text-[#2e3192] mb-2">{func.title}</h4>
                     <p className="text-[#747488] text-sm">{func.description}</p>
                   </div>
                 ))}
@@ -188,7 +188,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Code of Conduct */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Code of Conduct</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Code of Conduct</h3>
               <p className="text-[#747488] leading-relaxed">
                 Our institution is committed in maintaining the highest standards of integrity, transparency, and ethical conduct in all ISR activities. We prioritize meaningful stakeholder engagement, environmental responsibility, and strategic philanthropy. We ensure that all initiatives align with our core values and contribute positively to society while fostering a culture of accountability and continuous improvement.
               </p>
@@ -196,11 +196,11 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Standard Operating Procedure */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Standard Operating Procedure (SOP)</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Standard Operating Procedure (SOP)</h3>
               <div className="space-y-3">
                 {isrSOP.map((step, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <div className="bg-[#CCB156] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="bg-[#fdb913] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
                       {index + 1}
                     </div>
                     <span className="text-[#747488] leading-relaxed">{step}</span>
@@ -214,12 +214,12 @@ const CommunityServicesPage: React.FC = () => {
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <div className="flex items-center space-x-3 mb-6">
               <Shield className="h-8 w-8 text-[#DC143C]" />
-              <h2 className="text-3xl font-bold text-[#0D225C]">Youth Red Cross (YRC)</h2>
+              <h2 className="text-3xl font-bold text-[#2e3192]">Youth Red Cross (YRC)</h2>
             </div>
 
             {/* Introduction */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Introduction</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Introduction</h3>
               <p className="text-[#747488] leading-relaxed mb-3">
                 The Indian Red Cross Society is a premier humanitarian organization dedicated to alleviating human suffering and promoting health and welfare. Youth Red Cross (YRC) plays a vital role in grooming young minds for humanitarian efforts and community service.
               </p>
@@ -230,7 +230,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Purpose */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Purpose</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Purpose</h3>
               <p className="text-[#747488] leading-relaxed">
                 The purpose of YRC is to involve youth in humanitarian efforts, promoting compassion, non-violence, and community service. We emphasize leadership development, social responsibility, and inclusivity, empowering students to become agents of positive change in society.
               </p>
@@ -238,7 +238,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Aims */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Aims of Youth Red Cross</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Aims of Youth Red Cross</h3>
               <ul className="space-y-3">
                 {yrcAims.map((aim, index) => (
                   <li key={index} className="flex items-start space-x-3">
@@ -251,7 +251,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* YRC at Parivarthana */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Youth Red Cross at Parivarthana B-School</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Youth Red Cross at Parivarthana B-School</h3>
               <p className="text-[#747488] leading-relaxed mb-3">
                 The YRC wing at Parivarthana B-School was established in 2024-25 as per the University of Mysore's order. Since its inception, we have organized numerous activities including invited talks, comprehensive training programs, and interactive workshops to enhance civic sense and social responsibility among students.
               </p>
@@ -262,11 +262,11 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Committee Composition */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Composition of YRC Committee</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Composition of YRC Committee</h3>
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="bg-[#0D225C] text-white">
+                    <tr className="bg-[#2e3192] text-white">
                       <th className="px-6 py-3 text-left">Members</th>
                       <th className="px-6 py-3 text-left">Designation</th>
                     </tr>
@@ -285,7 +285,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Membership Criteria */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Membership Criteria</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Membership Criteria</h3>
               <p className="text-[#747488] leading-relaxed">
                 YRC membership is open to all students enrolled at Parivarthana B-School. Members must be between the ages of 17 and 35 years. All students are encouraged to participate in YRC activities and contribute to humanitarian causes. Membership is voluntary and requires a commitment to upholding Red Cross principles and values.
               </p>
@@ -293,7 +293,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Leadership Structure */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Leadership Structure</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Leadership Structure</h3>
               <p className="text-[#747488] leading-relaxed">
                 The YRC at Parivarthana B-School operates under a structured leadership framework comprising a Coordinator and Members who oversee various activities. The leadership team is responsible for planning, coordinating, and executing YRC programs, ensuring alignment with Red Cross principles and institutional objectives. Student leaders are selected based on their commitment, leadership potential, and dedication to humanitarian service.
               </p>
@@ -301,7 +301,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Activity Planning */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Activity Planning</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Activity Planning</h3>
               <p className="text-[#747488] leading-relaxed">
                 All YRC activities are planned in accordance with Red Cross principles and the institution's academic calendar. Activities include health awareness campaigns, blood donation drives, first aid training, disaster preparedness workshops, and community service initiatives. Each activity is designed to provide practical learning experiences while making a meaningful impact on the community.
               </p>
@@ -309,7 +309,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Training Programs */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Training Programs</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Training Programs</h3>
               <p className="text-[#747488] leading-relaxed">
                 YRC members receive comprehensive training covering first aid, emergency rescue techniques, humanitarian principles, disaster management, and leadership development. Training programs are conducted by certified trainers and Red Cross officials, ensuring that members are well-equipped to handle emergencies and contribute effectively to humanitarian efforts.
               </p>
@@ -317,7 +317,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Safety Protocols */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Safety Protocols</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Safety Protocols</h3>
               <p className="text-[#747488] leading-relaxed">
                 Safety is our top priority in all YRC activities. We maintain strict safety protocols including mandatory first aid training for all volunteers, thorough risk assessments before activities, emergency response plans, and adequate supervision during events. All activities are conducted under the guidance of trained faculty members and Red Cross officials.
               </p>
@@ -325,7 +325,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Reporting and Documentation */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Reporting and Documentation</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Reporting and Documentation</h3>
               <p className="text-[#747488] leading-relaxed">
                 Comprehensive documentation and reporting procedures are maintained for all YRC activities. This includes activity reports, attendance records, impact assessments, photographs, and feedback forms. Regular reports are submitted to the University of Mysore and the Indian Red Cross Society to ensure transparency and accountability.
               </p>
@@ -333,7 +333,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Fundraising and Finances */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Fundraising and Finances</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Fundraising and Finances</h3>
               <p className="text-[#747488] leading-relaxed">
                 YRC activities are supported through institutional funding and ethical fundraising initiatives. All financial transactions are transparent and properly documented. Budgets are prepared for each activity, and funds are utilized exclusively for YRC programs and humanitarian initiatives. Financial reports are maintained and audited regularly to ensure proper management.
               </p>
@@ -341,7 +341,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Collaboration and Partnerships */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Collaboration and Partnerships</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Collaboration and Partnerships</h3>
               <p className="text-[#747488] leading-relaxed">
                 We actively collaborate with the Indian Red Cross Society, healthcare institutions, NGOs, and other educational institutions to enhance our YRC programs. These partnerships provide valuable resources, expertise, and opportunities for our students to participate in larger humanitarian initiatives and gain practical experience in community service.
               </p>
@@ -349,7 +349,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Evaluation and Continuous Improvement */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Evaluation and Continuous Improvement</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Evaluation and Continuous Improvement</h3>
               <p className="text-[#747488] leading-relaxed">
                 Regular evaluation mechanisms are in place to assess the effectiveness of YRC programs. We collect feedback from participants, analyze activity outcomes, and implement improvements based on lessons learned. Annual reviews help us refine our strategies and ensure that our programs continue to meet the evolving needs of our community.
               </p>
@@ -357,16 +357,16 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Observation of Important Days */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Observation of Important Days</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Observation of Important Days</h3>
               <p className="text-[#747488] leading-relaxed mb-4">
                 YRC at Parivarthana B-School observes the following important days with special programs and activities:
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 {importantDays.map((day, index) => (
-                  <div key={index} className="bg-[#F0F0EA] p-4 rounded-lg flex items-start space-x-3">
+                  <div key={index} className="bg-[#f8f9fa] p-4 rounded-lg flex items-start space-x-3">
                     <Calendar className="h-5 w-5 text-[#DC143C] flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-[#0D225C]">{day.date}</p>
+                      <p className="font-semibold text-[#2e3192]">{day.date}</p>
                       <p className="text-[#747488] text-sm">{day.event}</p>
                     </div>
                   </div>
@@ -376,7 +376,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Code of Conduct */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Code of Conduct</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Code of Conduct</h3>
               <p className="text-[#747488] leading-relaxed">
                 All YRC members are expected to uphold humanitarian values and demonstrate respect, integrity, and professionalism in all activities. Members must maintain confidentiality, show compassion towards all individuals regardless of background, work collaboratively as a team, and represent the institution and Red Cross Society with dignity. Any violation of the code of conduct will be addressed through appropriate disciplinary measures.
               </p>
@@ -384,7 +384,7 @@ const CommunityServicesPage: React.FC = () => {
 
             {/* Standard Operating Procedure */}
             <div>
-              <h3 className="text-2xl font-bold text-[#0D225C] mb-4">Standard Operating Procedure (SOP)</h3>
+              <h3 className="text-2xl font-bold text-[#2e3192] mb-4">Standard Operating Procedure (SOP)</h3>
               <div className="space-y-3">
                 {yrcSOP.map((step, index) => (
                   <div key={index} className="flex items-start space-x-3">

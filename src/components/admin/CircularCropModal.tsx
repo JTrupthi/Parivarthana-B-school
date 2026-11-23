@@ -49,14 +49,14 @@ const CircularCropModal: React.FC<CircularCropModalProps> = ({
     <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 backdrop-blur-md animate-fade-in font-sans">
       <div className="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-gray-100 flex flex-col max-h-[90vh]">
         {/* Header */}
-        <div className="p-5 bg-[#0D225C] text-white flex items-center justify-between">
+        <div className="p-5 bg-[#2e3192] text-white flex items-center justify-between">
           <div className="flex items-center space-x-2.5">
-            <div className="h-8 w-8 rounded-full bg-[#CCB156]/20 border border-[#CCB156]/40 flex items-center justify-center text-[#CCB156]">
+            <div className="h-8 w-8 rounded-full bg-[#fdb913]/20 border border-[#fdb913]/40 flex items-center justify-center text-[#fdb913]">
               <Sparkles className="h-4 w-4" />
             </div>
             <div>
               <h3 className="font-extrabold text-base tracking-tight">Manual Fit & Circular Crop</h3>
-              <p className="text-[11px] text-[#CCB156]">Drag, zoom, and fit the faculty portrait in the circle frame</p>
+              <p className="text-[11px] text-[#fdb913]">Drag, zoom, and fit the faculty portrait in the circle frame</p>
             </div>
           </div>
           <button
@@ -84,7 +84,7 @@ const CircularCropModal: React.FC<CircularCropModalProps> = ({
             style={{
               containerStyle: { background: '#0a0a0f' },
               cropAreaStyle: {
-                border: '4px solid #CCB156',
+                border: '4px solid #fdb913',
                 boxShadow: '0 0 0 9999px rgba(0, 0, 0, 0.7)',
               },
             }}
@@ -104,10 +104,10 @@ const CircularCropModal: React.FC<CircularCropModalProps> = ({
               step={0.05}
               aria-labelledby="Zoom"
               onChange={(e) => setZoom(Number(e.target.value))}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#0D225C]"
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#2e3192]"
             />
             <ZoomIn className="h-4 w-4 text-gray-500 flex-shrink-0" />
-            <span className="text-xs font-bold text-[#0D225C] w-12 text-right">
+            <span className="text-xs font-bold text-[#2e3192] w-12 text-right">
               {zoom.toFixed(1)}x
             </span>
           </div>
@@ -135,9 +135,9 @@ const CircularCropModal: React.FC<CircularCropModalProps> = ({
                 type="button"
                 onClick={handleApplyCrop}
                 disabled={isProcessing}
-                className="flex items-center space-x-1.5 px-5 py-2 bg-[#0D225C] hover:bg-[#143282] text-white rounded-xl text-xs font-extrabold shadow-md hover:shadow-lg transition-all"
+                className="flex items-center space-x-1.5 px-5 py-2 bg-[#2e3192] hover:bg-[#143282] text-white rounded-xl text-xs font-extrabold shadow-md hover:shadow-lg transition-all"
               >
-                <Check className="h-4 w-4 text-[#CCB156]" />
+                <Check className="h-4 w-4 text-[#fdb913]" />
                 <span>{isProcessing ? 'Cropping...' : 'Apply & Fit Photo'}</span>
               </button>
             </div>

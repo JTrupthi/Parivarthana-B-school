@@ -58,12 +58,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA] flex flex-col justify-center py-12 sm:px-6 lg:px-8 relative font-sans">
+    <div className="min-h-screen bg-[#f8f9fa] flex flex-col justify-center py-12 sm:px-6 lg:px-8 relative font-sans">
       {/* Back to Home Button */}
       <div className="absolute top-6 left-6 z-10">
         <button
           onClick={() => navigate('/')}
-          className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-white/80 backdrop-blur-md border border-gray-200 text-[#0D225C] hover:text-[#CCB156] shadow-sm hover:shadow-md transition-all text-xs sm:text-sm font-bold cursor-pointer"
+          className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-white/80 backdrop-blur-md border border-gray-200 text-[#2e3192] hover:text-[#fdb913] shadow-sm hover:shadow-md transition-all text-xs sm:text-sm font-bold cursor-pointer"
         >
           <ArrowLeft className="h-4 w-4" />
           <span>Back to Main Website</span>
@@ -83,11 +83,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
               }}
             />
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0D225C] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2e3192] tracking-tight">
             Parivarthana Business School
           </h2>
-          <div className="inline-flex items-center space-x-2 bg-[#CCB156]/20 px-3 py-1 rounded-full text-xs font-bold text-[#0D225C]">
-            <ShieldCheck className="h-3.5 w-3.5 text-[#CCB156]" />
+          <div className="inline-flex items-center space-x-2 bg-[#fdb913]/20 px-3 py-1 rounded-full text-xs font-bold text-[#2e3192]">
+            <ShieldCheck className="h-3.5 w-3.5 text-[#fdb913]" />
             <span>Administrative Management Portal</span>
           </div>
         </div>
@@ -104,7 +104,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
 
             {/* Username Input */}
             <div>
-              <label className="block text-xs font-bold text-[#0D225C] uppercase tracking-wider mb-2">
+              <label className="block text-xs font-bold text-[#2e3192] uppercase tracking-wider mb-2">
                 Username
               </label>
               <div className="relative">
@@ -116,7 +116,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
                   name="username"
                   value={credentials.username}
                   onChange={handleInputChange}
-                  className="w-full pl-10 pr-4 py-3 bg-gray-50/50 border border-gray-300 rounded-xl text-sm text-[#0D225C] font-semibold focus:ring-2 focus:ring-[#CCB156] focus:bg-white focus:border-transparent outline-none transition-all"
+                  className="w-full pl-10 pr-4 py-3 bg-gray-50/50 border border-gray-300 rounded-xl text-sm text-[#2e3192] font-semibold focus:ring-2 focus:ring-[#fdb913] focus:bg-white focus:border-transparent outline-none transition-all"
                   placeholder="Enter your username"
                   required
                   autoFocus
@@ -126,7 +126,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
 
             {/* Password Input */}
             <div>
-              <label className="block text-xs font-bold text-[#0D225C] uppercase tracking-wider mb-2">
+              <label className="block text-xs font-bold text-[#2e3192] uppercase tracking-wider mb-2">
                 Password
               </label>
               <div className="relative">
@@ -138,14 +138,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
                   name="password"
                   value={credentials.password}
                   onChange={handleInputChange}
-                  className="w-full pl-10 pr-12 py-3 bg-gray-50/50 border border-gray-300 rounded-xl text-sm text-[#0D225C] font-semibold focus:ring-2 focus:ring-[#CCB156] focus:bg-white focus:border-transparent outline-none transition-all"
+                  className="w-full pl-10 pr-12 py-3 bg-gray-50/50 border border-gray-300 rounded-xl text-sm text-[#2e3192] font-semibold focus:ring-2 focus:ring-[#fdb913] focus:bg-white focus:border-transparent outline-none transition-all"
                   placeholder="Enter your password"
                   required
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 p-1 text-gray-400 hover:text-[#0D225C] transition-colors"
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 p-1 text-gray-400 hover:text-[#2e3192] transition-colors"
                 >
                   {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                 </button>
@@ -156,7 +156,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-[#0D225C] to-[#143282] hover:from-[#143282] hover:to-[#0D225C] text-white py-3.5 px-6 rounded-xl font-bold text-sm shadow-md hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 cursor-pointer"
+              className="w-full bg-gradient-to-r from-[#2e3192] to-[#143282] hover:from-[#143282] hover:to-[#2e3192] text-white py-3.5 px-6 rounded-xl font-bold text-sm shadow-md hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 cursor-pointer"
             >
               {isLoading ? (
                 <>

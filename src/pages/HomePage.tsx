@@ -14,10 +14,10 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    // Show popup after 2 seconds when component mounts
+    // Show enquiry popup after 3 seconds on first visit
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 2000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -29,11 +29,11 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   return (
     <>
       <HeroSection onNavigate={onNavigate} />
-      <NewsSection />
+      <NewsSection onNavigate={onNavigate} />
       <AboutSection onNavigate={onNavigate} />
       <HomePrograms onNavigate={onNavigate} />
-      <LifeAtPBS />
-      
+      <LifeAtPBS onNavigate={onNavigate} />
+
       <AdmissionEnquiryPopup 
         isOpen={showPopup} 
         onClose={handleClosePopup} 

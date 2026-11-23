@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, GraduationCap, ArrowRight } from 'lucide-react';
+import React from 'react';
+import { MapPin, Phone, Mail, Instagram, Linkedin, Facebook, Youtube, MessageCircle, ArrowRight } from 'lucide-react';
 import { getAssetUrl } from '../utils/assets';
 
 interface FooterProps {
@@ -7,186 +7,202 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
-  const [email, setEmail] = useState('');
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setIsSubscribed(true);
-      setEmail('');
-      setTimeout(() => setIsSubscribed(false), 3000);
-    }
-  };
+  const aboutLinks = [
+    { id: 'AboutTrust', label: 'Om Shreenikethana Trust' },
+    { id: 'AboutPBS', label: 'About Parivarthana Business School' },
+    { id: 'PrincipalsMessage', label: "Principal's Desk" },
+    { id: 'BoardofTustees&Message', label: 'Board of Trustees' },
+    { id: 'GoverningCouncilMembers', label: 'Governing Council' },
+    { id: 'IQAC', label: 'Internal Quality Assurance Cell (IQAC)' },
+  ];
 
   const quickLinks = [
-    { id: 'about', label: 'About Us' },
-    { id: 'academics', label: 'Academics' },
-    { id: 'admissions', label: 'Admissions' },
-    { id: 'research', label: 'Research' },
+    { id: 'UnderGraduateAdmission', label: 'Admissions 2026-27' },
+    { id: 'UnderGraduatePrograms', label: 'Undergraduate (UG) Programs' },
+    { id: 'PostGraduatePrograms', label: 'Postgraduate (PG) Programs' },
+    { id: 'TrainingandPlacementCell(TAP)', label: 'Training & Placement (TAP)' },
+    { id: 'facilities', label: 'Campus Infrastructure' },
+    { id: 'StudentAchievers', label: 'Student Achievers' },
+    { id: 'Gallery', label: 'Photo & Video Gallery' },
     { id: 'UGCDisclosure', label: 'UGC Public Self-Disclosure' },
+    { id: 'MandatoryDisclosure', label: 'Essential Documents' },
   ];
 
-  const adminLinks = [
-    { id: 'admin-login', label: 'Admin Login', isSpecial: true },
-  ];
-
-  const campusLinks = [
-    { id: 'facilities', label: 'Facilities' },
-    { id: 'contact', label: 'Library' },
-    { id: 'contact', label: 'Student Life' },
-    { id: 'contact', label: 'Career Services' },
-  ];
-
-  const socialLinks = [
-    { icon: Instagram, href: 'https://www.instagram.com/pbs_mysuru?igsh=dXI3YTR6MDVyenc0', color: 'hover:text-pink-600' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/company/parivarthana-business-school/', color: 'hover:text-blue-700' },
+  const studentLinks = [
+    { id: 'Alumni', label: 'Alumni Association' },
+    { id: 'StatutoryCells', label: 'Statutory Cells & Committees' },
+    { id: 'CommunityServices', label: 'Community Outreach & NSS' },
+    { id: 'Examination', label: 'Examination Guidelines' },
+    { id: 'FeePayment', label: 'Online Fee Payment' },
+    { id: 'admin-login', label: 'Staff / Admin Portal' },
   ];
 
   return (
-    <footer className="bg-[#0D225C] text-white">
+    <footer className="bg-[#1b1e56] text-white font-sans relative overflow-hidden">
+      {/* Top Footer Main Columns (NSAM PUC Footer Style) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand & Contact */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Column 1: Institutional Summary */}
+          <div>
+            <div className="flex items-center space-x-3 mb-4">
               <img
                 src={getAssetUrl('parivarthana-logo.png')}
                 alt="Parivarthana Business School Logo"
-                className="h-10 w-auto"
+                className="h-12 w-auto bg-white p-1 rounded"
               />
               <div>
-                <h3 className="text-xl font-bold">Parivarthana Buisness School</h3>
-                <p className="text-sm text-gray-300">Experience the Empowerment</p>
+                <h3 className="text-base font-black text-white leading-tight uppercase">
+                  Parivarthana
+                </h3>
+                <span className="text-xs text-[#fdb913] font-bold block uppercase tracking-wider">
+                  Business School
+                </span>
               </div>
             </div>
             
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Committed to fostering innovation, critical thinking, and leadership 
-              among our students for over five decades.
+            <p className="text-xs text-gray-300 leading-relaxed mb-6 font-normal">
+              Premier institution established under Om Shreenikethana Trust (R), affiliated to University of Mysore and approved by AICTE, New Delhi. Dedicated to management and technology excellence.
             </p>
 
-            <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-[#CCB156] flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-sm text-gray-300">
-                    436/B, Hebbal, Mysuru,<br />
-                    Karnataka 570016
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-[#CCB156]" />
-                <p className="text-sm text-gray-300">9740119888 / 9740129888</p>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-[#CCB156]" />
-                <p className="text-sm text-gray-300">info@parivarthanabschool.in</p>
-              </div>
+            <div className="text-xs text-gray-300 space-y-1 bg-white/5 p-3 rounded border border-white/10">
+              <div className="font-bold text-[#fdb913]">Affiliation & Approvals:</div>
+              <div>• Affiliated to University of Mysore</div>
+              <div>• Approved by AICTE, New Delhi</div>
+              <div>• Recognized by Govt. of Karnataka</div>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Column 2: About Us (with NSAM PUC gold underline) */}
           <div>
-            <h4 className="text-lg font-bold mb-6">Quick Links</h4>
-            <ul className="space-y-3">
+            <h3 className="text-sm font-black text-white uppercase tracking-wider mb-2">
+              About Us
+            </h3>
+            <div className="w-10 h-0.5 bg-[#fdb913] mb-4" />
+            <ul className="space-y-2 text-xs">
+              {aboutLinks.map((link) => (
+                <li key={link.id}>
+                  <button
+                    onClick={() => onNavigate(link.id)}
+                    className="text-gray-300 hover:text-[#fdb913] transition-colors text-left flex items-center space-x-1 py-0.5"
+                  >
+                    <span>• {link.label}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3: Quick Links & Academics */}
+          <div>
+            <h3 className="text-sm font-black text-white uppercase tracking-wider mb-2">
+              Quick Links
+            </h3>
+            <div className="w-10 h-0.5 bg-[#fdb913] mb-4" />
+            <ul className="space-y-2 text-xs">
               {quickLinks.map((link) => (
                 <li key={link.id}>
                   <button
                     onClick={() => onNavigate(link.id)}
-                    className="text-gray-300 hover:text-[#CCB156] transition-colors duration-300 text-sm"
+                    className="text-gray-300 hover:text-[#fdb913] transition-colors text-left flex items-center space-x-1 py-0.5"
                   >
-                    {link.label}
+                    <span>• {link.label}</span>
                   </button>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Admin Links */}
+          {/* Column 4: Contact & Socials */}
           <div>
-            <h4 className="text-lg font-bold mb-6">Admin</h4>
-            <ul className="space-y-3">
-              {adminLinks.map((link) => (
-                <li key={link.id}>
-                  <button
-                    onClick={() => onNavigate(link.id)}
-                    className="text-[#CCB156] hover:text-white transition-colors duration-300 text-sm font-semibold flex items-center space-x-2"
-                  >
-                    <span>{link.label}</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+            <h3 className="text-sm font-black text-white uppercase tracking-wider mb-2">
+              Contact Us
+            </h3>
+            <div className="w-10 h-0.5 bg-[#fdb913] mb-4" />
+            <address className="not-italic text-xs text-gray-300 space-y-3 leading-relaxed">
+              <div className="flex items-start space-x-2.5">
+                <MapPin className="h-4 w-4 text-[#fdb913] shrink-0 mt-0.5" />
+                <span>
+                  <strong>Parivarthana Business School</strong><br />
+                  436/B, Hebbal, Mysuru,<br />
+                  Karnataka - 570016, India
+                </span>
+              </div>
 
-          {/* Campus Links */}
-          <div>
-            <h4 className="text-lg font-bold mb-6">Campus</h4>
-            <ul className="space-y-3">
-              {campusLinks.map((link, index) => (
-                <li key={index}>
-                  <button
-                    onClick={() => onNavigate(link.id)}
-                    className="text-gray-300 hover:text-[#CCB156] transition-colors duration-300 text-sm"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+              <div className="flex items-center space-x-2.5">
+                <Phone className="h-4 w-4 text-[#fdb913] shrink-0" />
+                <span>9740119888 / 9740129888</span>
+              </div>
 
-          {/* Newsletter */}
-          <div>
-            <h4 className="text-lg font-bold mb-6">Stay Connected</h4>
-            <p className="text-gray-300 text-sm mb-4">
-              Subscribe to our socials for the latest updates and news.
-            </p>
+              <div className="flex items-center space-x-2.5">
+                <Mail className="h-4 w-4 text-[#fdb913] shrink-0" />
+                <span>info@parivarthanabschool.in</span>
+              </div>
+            </address>
 
-            {/* Social Links */}
-            <div className="flex space-x-4">
-              {socialLinks.map((social, index) => (
+            {/* Circular Social Icons (.social-network like NSAM PUC) */}
+            <div className="mt-6 pt-4 border-t border-white/10">
+              <span className="text-[11px] font-bold text-gray-300 uppercase tracking-wider block mb-3">
+                Connect With Us
+              </span>
+              <div className="flex items-center space-x-2">
                 <a
-                  key={index}
-                  href={social.href}
-                  className={`text-gray-300 ${social.color} transition-colors duration-300`}
+                  href="https://www.instagram.com/pbs_mysuru?igsh=dXI3YTR6MDVyenc0"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#fdb913] hover:text-[#2e3192] text-white flex items-center justify-center transition-all"
+                  aria-label="Instagram"
                 >
-                  <social.icon className="h-5 w-5" />
+                  <Instagram className="h-4 w-4" />
                 </a>
-              ))}
+                <a
+                  href="https://www.linkedin.com/company/parivarthana-business-school/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#fdb913] hover:text-[#2e3192] text-white flex items-center justify-center transition-all"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=919740119888&text=Hello%20PBS%20Admissions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#fdb913] hover:text-[#2e3192] text-white flex items-center justify-center transition-all"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                </a>
+                <button
+                  onClick={() => onNavigate('contact')}
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#fdb913] hover:text-[#2e3192] text-white flex items-center justify-center transition-all"
+                  aria-label="Contact Desk"
+                >
+                  <Mail className="h-4 w-4" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-white/20 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm mb-4 md:mb-0">
-              © 2024 Parivarthana Buisness School. All rights reserved.
-            </p>
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-300 hover:text-[#CCB156] transition-colors duration-300">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#CCB156] transition-colors duration-300">
-                Terms of Service
-              </a>
-              <a
-                href="https://formaculture.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-[#CCB156] transition-colors duration-300 font-medium"
-              >
-                Developed By Team Formaculture
-              </a>
-            </div>
+      {/* SIGNATURE NSAM PUC BOTTOM COPYRIGHT BAR (.copy-bg in bright Golden Yellow #fdb913) */}
+      <div className="bg-[#fdb913] text-[#1b1e56] py-3.5 px-4 text-center">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs font-bold">
+          <div>
+            © {new Date().getFullYear()} Parivarthana Business School, Mysuru. All Rights Reserved.
+          </div>
+          <div className="flex items-center space-x-4 mt-2 sm:mt-0 text-[11px]">
+            <button onClick={() => onNavigate('MandatoryDisclosure')} className="hover:underline">
+              Mandatory Disclosure
+            </button>
+            <span>•</span>
+            <button onClick={() => onNavigate('UGCDisclosure')} className="hover:underline">
+              UGC Disclosure
+            </button>
+            <span>•</span>
+            <button onClick={() => onNavigate('admin-login')} className="hover:underline">
+              Portal Access
+            </button>
           </div>
         </div>
       </div>

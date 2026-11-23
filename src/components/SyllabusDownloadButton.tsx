@@ -33,14 +33,14 @@ export const SyllabusDownloadButton: React.FC<SyllabusDownloadButtonProps> = ({ 
   };
 
   return (
-    <div className="bg-[#0D225C]/5 border border-[#0D225C]/10 rounded-2xl p-6 mt-8 shadow-sm">
+    <div className="bg-[#2e3192]/5 border border-[#2e3192]/15 rounded-xl p-6 mt-8 shadow-xs">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div className="flex items-center space-x-4">
-          <div className="h-12 w-12 rounded-full bg-[#0D225C]/10 flex items-center justify-center text-[#0D225C]">
+          <div className="h-12 w-12 rounded-lg bg-[#2e3192] flex items-center justify-center text-[#fdb913]">
             <BookOpen className="h-6 w-6" />
           </div>
           <div>
-            <h3 className="text-lg font-bold text-[#0D225C]">Official UGC Syllabus</h3>
+            <h3 className="text-lg font-black text-[#2e3192]">Official UGC & University Syllabus</h3>
             <p className="text-sm text-gray-500">Academic Year {document.year}</p>
           </div>
         </div>
@@ -48,14 +48,14 @@ export const SyllabusDownloadButton: React.FC<SyllabusDownloadButtonProps> = ({ 
         <div className="flex items-center gap-3 w-full sm:w-auto">
           <button
             onClick={handleOpen}
-            className="flex-1 sm:flex-none flex items-center justify-center px-4 py-2 bg-white text-[#0D225C] border border-[#0D225C]/20 rounded-xl font-bold hover:bg-[#0D225C]/5 transition-colors text-sm"
+            className="flex-1 sm:flex-none flex items-center justify-center px-4 py-2 bg-white text-[#2e3192] border border-[#2e3192]/30 rounded-lg font-bold hover:bg-gray-50 transition-colors text-xs uppercase tracking-wider"
           >
             <ExternalLink className="h-4 w-4 mr-2" />
             View
           </button>
           <button
             onClick={handleDownload}
-            className="flex-1 sm:flex-none flex items-center justify-center px-4 py-2 bg-[#0D225C] text-white rounded-xl font-bold hover:bg-[#143282] transition-colors shadow-sm text-sm"
+            className="flex-1 sm:flex-none flex items-center justify-center px-4 py-2 bg-[#fdb913] hover:bg-[#e5a50b] text-[#2e3192] rounded-lg font-black transition-colors shadow-sm text-xs uppercase tracking-wider"
           >
             <Download className="h-4 w-4 mr-2" />
             Download

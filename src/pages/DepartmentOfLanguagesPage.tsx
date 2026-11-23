@@ -29,7 +29,7 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
       title: 'Department of English',
       tag: 'Global Communication & Business English',
       icon: Globe,
-      color: 'from-[#0D225C] to-[#16368C]',
+      color: 'from-[#2e3192] to-[#16368C]',
       description:
         'Focuses on professional corporate communication, grammatical precision, technical report writing, public speaking, phonetics, and advanced presentation skills to equip students for global corporate environments.',
       features: [
@@ -43,7 +43,7 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
       title: 'Department of Kannada',
       tag: 'Regional Heritage & Literature Studies',
       icon: Feather,
-      color: 'from-[#917930] to-[#CCB156]',
+      color: 'from-[#917930] to-[#fdb913]',
       description:
         'Dedicated to preserving and promoting the rich cultural and literary heritage of Karnataka through both Samskrithika Kannada (for native speakers) and Vyavaharika Kannada (functional Kannada for non-native students).',
       features: [
@@ -102,13 +102,13 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
   ];
 
   return (
-    <div className="min-h-screen bg-[#F0F0EA] font-sans">
+    <div className="min-h-screen bg-[#f8f9fa] font-sans">
       {/* Hero Section */}
-      <section className="relative bg-[#0D225C] text-white py-24 overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-full bg-gradient-to-l from-[#CCB156]/20 to-transparent pointer-events-none" />
+      <section className="relative bg-[#2e3192] text-white py-24 overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-full bg-gradient-to-l from-[#fdb913]/20 to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto space-y-6 animate-fade-in">
-            <div className="inline-flex items-center space-x-2 bg-[#CCB156]/20 border border-[#CCB156]/40 px-4 py-1.5 rounded-full text-xs font-bold text-[#CCB156]">
+            <div className="inline-flex items-center space-x-2 bg-[#fdb913]/20 border border-[#fdb913]/40 px-4 py-1.5 rounded-full text-xs font-bold text-[#fdb913]">
               <Languages className="h-4 w-4" />
               <span>Academic Division • Humanities & Linguistic Studies</span>
             </div>
@@ -127,18 +127,18 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-6 text-[#747488]">
-              <div className="flex items-center space-x-2 text-[#0D225C] font-bold text-xs uppercase tracking-wider">
-                <Compass className="h-4 w-4 text-[#CCB156]" />
+              <div className="flex items-center space-x-2 text-[#2e3192] font-bold text-xs uppercase tracking-wider">
+                <Compass className="h-4 w-4 text-[#fdb913]" />
                 <span>Foundational Pillar of Higher Education</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-[#0D225C] leading-tight">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[#2e3192] leading-tight">
                 Empowering Voices, Elevating Expression
               </h2>
               <p className="text-base md:text-lg leading-relaxed">
-                The <strong className="text-[#0D225C]">Department of Languages</strong> at Parivarthana Business School plays an indispensable role in shaping well-rounded, articulate, and culturally grounded professionals. Language is not merely a medium of communication—it is the cornerstone of leadership, critical analysis, and intellectual refinement.
+                The <strong className="text-[#2e3192]">Department of Languages</strong> at Parivarthana Business School plays an indispensable role in shaping well-rounded, articulate, and culturally grounded professionals. Language is not merely a medium of communication—it is the cornerstone of leadership, critical analysis, and intellectual refinement.
               </p>
               <p className="text-base md:text-lg leading-relaxed">
-                Our faculty delivers tailored language curricula affiliated with the <strong className="text-[#0D225C]">University of Mysore</strong> for students across B.Com, BBA, BCA, MBA, and MCA programs. We emphasize functional language proficiency, corporate presentation skills, and the vibrant literary traditions of both Kannada and English.
+                Our faculty delivers tailored language curricula affiliated with the <strong className="text-[#2e3192]">University of Mysore</strong> for students across B.Com, BBA, BCA, MBA, and MCA programs. We emphasize functional language proficiency, corporate presentation skills, and the vibrant literary traditions of both Kannada and English.
               </p>
             </div>
 
@@ -152,14 +152,14 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
                     (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80';
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0D225C]/90 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2e3192]/90 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-gray-100 flex items-center justify-between">
                   <div>
-                    <div className="text-lg font-bold text-[#0D225C]">Bilingual Excellence</div>
+                    <div className="text-lg font-bold text-[#2e3192]">Bilingual Excellence</div>
                     <div className="text-xs text-[#747488]">Kannada & English Curriculum</div>
                   </div>
-                  <div className="h-10 w-10 rounded-xl bg-[#CCB156]/20 flex items-center justify-center text-[#0D225C] font-bold">
-                    <Sparkles className="h-5 w-5 text-[#CCB156]" />
+                  <div className="h-10 w-10 rounded-xl bg-[#fdb913]/20 flex items-center justify-center text-[#2e3192] font-bold">
+                    <Sparkles className="h-5 w-5 text-[#fdb913]" />
                   </div>
                 </div>
               </div>
@@ -169,13 +169,13 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
       </section>
 
       {/* Language Streams (English & Kannada) */}
-      <section className="py-20 bg-[#F0F0EA]">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <span className="text-xs font-bold text-[#CCB156] uppercase tracking-wider block">
+            <span className="text-xs font-bold text-[#fdb913] uppercase tracking-wider block">
               Curriculum Dimensions
             </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#2e3192]">
               Language Disciplines
             </h2>
             <p className="text-[#747488] text-base sm:text-lg">
@@ -211,12 +211,12 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
                       </p>
 
                       <div className="space-y-3 pt-2">
-                        <h4 className="text-xs font-bold text-[#0D225C] uppercase tracking-wider">
+                        <h4 className="text-xs font-bold text-[#2e3192] uppercase tracking-wider">
                           Key Pedagogical Highlights:
                         </h4>
                         {stream.features.map((feat, fIdx) => (
                           <div key={fIdx} className="flex items-center space-x-2.5 text-xs sm:text-sm text-gray-700">
-                            <CheckCircle2 className="h-4 w-4 text-[#CCB156] flex-shrink-0" />
+                            <CheckCircle2 className="h-4 w-4 text-[#fdb913] flex-shrink-0" />
                             <span>{feat}</span>
                           </div>
                         ))}
@@ -234,10 +234,10 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
       <section className="py-20 bg-white border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-3">
-            <span className="text-xs font-bold text-[#CCB156] uppercase tracking-wider block">
+            <span className="text-xs font-bold text-[#fdb913] uppercase tracking-wider block">
               Academic Mentors
             </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#2e3192]">
               Department Faculty
             </h2>
             <p className="text-[#747488] text-base sm:text-lg max-w-2xl mx-auto">
@@ -247,45 +247,45 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
 
           {loading ? (
             <div className="flex justify-center items-center py-20">
-              <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-[#0D225C]"></div>
+              <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-[#2e3192]"></div>
             </div>
           ) : (
             <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               {faculty.map((member) => (
                 <div
                   key={member.id}
-                  className="bg-[#F0F0EA] rounded-3xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200/80 group"
+                  className="bg-[#f8f9fa] rounded-3xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200/80 group"
                 >
                   <div className="relative w-28 h-28 mx-auto mb-6">
                     <img
                       src={getAssetUrl(member.photo_url) || 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop'}
                       alt={member.name}
-                      className="w-full h-full rounded-full object-cover border-4 border-[#CCB156] shadow-md group-hover:scale-105 transition-transform"
+                      className="w-full h-full rounded-full object-cover border-4 border-[#fdb913] shadow-md group-hover:scale-105 transition-transform"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src = 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop';
                       }}
                     />
                   </div>
-                  <h3 className="text-2xl font-extrabold text-[#0D225C] mb-1 group-hover:text-[#CCB156] transition-colors">
+                  <h3 className="text-2xl font-extrabold text-[#2e3192] mb-1 group-hover:text-[#fdb913] transition-colors">
                     {member.name}
                   </h3>
-                  <p className="text-sm font-bold text-[#CCB156] mb-4">{member.designation}</p>
+                  <p className="text-sm font-bold text-[#fdb913] mb-4">{member.designation}</p>
                   
                   <div className="bg-white rounded-2xl p-4 space-y-2 text-left text-xs sm:text-sm border border-gray-200/60 shadow-sm">
                     {member.qualifications && (
                       <div className="flex items-start justify-between">
-                        <span className="font-bold text-[#0D225C]">Qualifications:</span>
+                        <span className="font-bold text-[#2e3192]">Qualifications:</span>
                         <span className="text-gray-600 font-semibold">{member.qualifications}</span>
                       </div>
                     )}
                     {member.experience_years && (
                       <div className="flex items-start justify-between pt-1 border-t border-gray-100">
-                        <span className="font-bold text-[#0D225C]">Experience:</span>
+                        <span className="font-bold text-[#2e3192]">Experience:</span>
                         <span className="text-gray-600 font-semibold">{member.experience_years}</span>
                       </div>
                     )}
                     <div className="flex items-start justify-between pt-1 border-t border-gray-100">
-                      <span className="font-bold text-[#0D225C]">Department:</span>
+                      <span className="font-bold text-[#2e3192]">Department:</span>
                       <span className="text-gray-600 font-semibold">Languages</span>
                     </div>
                   </div>
@@ -297,13 +297,13 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
       </section>
 
       {/* Objectives & Core Mandate */}
-      <section className="py-20 bg-[#F0F0EA]">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-3">
-            <span className="text-xs font-bold text-[#CCB156] uppercase tracking-wider block">
+            <span className="text-xs font-bold text-[#fdb913] uppercase tracking-wider block">
               Pedagogical Pillars
             </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#2e3192]">
               Department Objectives
             </h2>
             <p className="text-lg text-[#747488] max-w-3xl mx-auto font-light">
@@ -317,12 +317,12 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#CCB156] hover:-translate-y-1.5"
+                  className="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#fdb913] hover:-translate-y-1.5"
                 >
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0D225C] text-[#CCB156] rounded-2xl mb-5 shadow-sm">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-[#2e3192] text-[#fdb913] rounded-2xl mb-5 shadow-sm">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <h4 className="text-lg font-bold text-[#0D225C] mb-2">
+                  <h4 className="text-lg font-bold text-[#2e3192] mb-2">
                     {obj.title}
                   </h4>
                   <p className="text-[#747488] text-xs sm:text-sm leading-relaxed">
@@ -339,10 +339,10 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
       <section className="py-20 bg-white border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-3">
-            <span className="text-xs font-bold text-[#CCB156] uppercase tracking-wider block">
+            <span className="text-xs font-bold text-[#fdb913] uppercase tracking-wider block">
               Vibrant Campus Life
             </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0D225C]">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#2e3192]">
               Language & Literary Activities
             </h2>
             <p className="text-lg text-[#747488] max-w-3xl mx-auto font-light">
@@ -354,10 +354,10 @@ const DepartmentOfLanguagesPage: React.FC<DepartmentOfLanguagesPageProps> = ({ o
             {activities.map((act, index) => (
               <div
                 key={index}
-                className="bg-[#F0F0EA] rounded-3xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                className="bg-[#f8f9fa] rounded-3xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="text-3xl mb-4">{act.icon}</div>
-                <h4 className="text-lg font-bold text-[#0D225C] mb-2">{act.title}</h4>
+                <h4 className="text-lg font-bold text-[#2e3192] mb-2">{act.title}</h4>
                 <p className="text-xs sm:text-sm text-[#747488] leading-relaxed">{act.desc}</p>
               </div>
             ))}

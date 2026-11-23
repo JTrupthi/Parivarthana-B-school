@@ -361,11 +361,11 @@ const AdminDashboardPage: React.FC = () => {
     <DashboardLayout activeModule="dashboard">
       <div className="space-y-6 sm:space-y-8">
         {/* Hero Welcome Banner */}
-        <div className="relative overflow-hidden bg-gradient-to-r from-[#0D225C] via-[#102a70] to-[#0A1B4A] rounded-2xl p-6 sm:p-8 text-white shadow-lg border border-white/10">
-          <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-[#CCB156]/10 to-transparent pointer-events-none" />
+        <div className="relative overflow-hidden bg-gradient-to-r from-[#2e3192] via-[#102a70] to-[#0A1B4A] rounded-2xl p-6 sm:p-8 text-white shadow-lg border border-white/10">
+          <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-[#fdb913]/10 to-transparent pointer-events-none" />
           <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="space-y-2">
-              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-[#CCB156]">
+              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-[#fdb913]">
                 <Sparkles className="h-3.5 w-3.5" />
                 <span>PBS Enterprise Control Center</span>
               </div>
@@ -389,7 +389,7 @@ const AdminDashboardPage: React.FC = () => {
 
               <button
                 onClick={() => setShowDbModal(true)}
-                className="flex items-center space-x-2 bg-[#CCB156] hover:bg-[#bfa54d] text-[#0D225C] px-4 py-2.5 rounded-xl text-xs font-bold transition-all shadow-md"
+                className="flex items-center space-x-2 bg-[#fdb913] hover:bg-[#bfa54d] text-[#2e3192] px-4 py-2.5 rounded-xl text-xs font-bold transition-all shadow-md"
               >
                 <Database className="h-3.5 w-3.5" />
                 <span>Database Health</span>
@@ -399,7 +399,7 @@ const AdminDashboardPage: React.FC = () => {
                 href={getAssetUrl('')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 bg-white text-[#0D225C] hover:bg-gray-100 px-4 py-2.5 rounded-xl text-xs font-bold transition-all shadow-md"
+                className="flex items-center space-x-2 bg-white text-[#2e3192] hover:bg-gray-100 px-4 py-2.5 rounded-xl text-xs font-bold transition-all shadow-md"
               >
                 <span>Live Website</span>
                 <ExternalLink className="h-3.5 w-3.5" />
@@ -411,7 +411,7 @@ const AdminDashboardPage: React.FC = () => {
         {/* Quick Metric Cards */}
         <div>
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-base font-bold text-[#0D225C] flex items-center space-x-2">
+            <h3 className="text-base font-bold text-[#2e3192] flex items-center space-x-2">
               <span>System Metrics</span>
               <span className="text-xs font-normal text-gray-500">(Click card to manage)</span>
             </h3>
@@ -425,12 +425,12 @@ const AdminDashboardPage: React.FC = () => {
                 <div
                   key={card.id}
                   onClick={() => navigate(card.path)}
-                  className="group bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-md hover:border-[#CCB156]/50 transition-all duration-200 cursor-pointer flex flex-col justify-between"
+                  className="group bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-md hover:border-[#fdb913]/50 transition-all duration-200 cursor-pointer flex flex-col justify-between"
                 >
                   <div className="flex items-start justify-between">
                     <div>
                       <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">{card.title}</p>
-                      <h4 className="text-3xl font-extrabold text-[#0D225C] mt-2 group-hover:text-indigo-900 transition-colors">
+                      <h4 className="text-3xl font-extrabold text-[#2e3192] mt-2 group-hover:text-indigo-900 transition-colors">
                         {card.value}
                       </h4>
                     </div>
@@ -441,7 +441,7 @@ const AdminDashboardPage: React.FC = () => {
 
                   <div className="mt-4 pt-3 border-t border-gray-50 flex items-center justify-between text-xs">
                     <span className="text-gray-500 truncate">{card.subtitle}</span>
-                    <span className="font-semibold text-[#0D225C] group-hover:translate-x-0.5 transition-transform flex items-center space-x-1">
+                    <span className="font-semibold text-[#2e3192] group-hover:translate-x-0.5 transition-transform flex items-center space-x-1">
                       <span>Open</span>
                       <ArrowRight className="h-3 w-3" />
                     </span>
@@ -454,8 +454,8 @@ const AdminDashboardPage: React.FC = () => {
 
         {/* Quick Action Center */}
         <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-          <h3 className="text-base font-bold text-[#0D225C] mb-4 flex items-center space-x-2">
-            <Activity className="h-4 w-4 text-[#CCB156]" />
+          <h3 className="text-base font-bold text-[#2e3192] mb-4 flex items-center space-x-2">
+            <Activity className="h-4 w-4 text-[#fdb913]" />
             <span>Quick Action Center</span>
           </h3>
 
@@ -545,13 +545,13 @@ const AdminDashboardPage: React.FC = () => {
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-gray-100">
                 <div>
-                  <h3 className="text-base font-bold text-[#0D225C]">Recent Admission Enquiries</h3>
+                  <h3 className="text-base font-bold text-[#2e3192]">Recent Admission Enquiries</h3>
                   <p className="text-xs text-gray-500">Live prospective student requests</p>
                 </div>
                 {checkPermission('admissions_view') && (
                   <button
                     onClick={() => navigate('/admin/admissions')}
-                    className="text-xs font-bold text-[#0D225C] hover:text-[#CCB156] flex items-center space-x-1"
+                    className="text-xs font-bold text-[#2e3192] hover:text-[#fdb913] flex items-center space-x-1"
                   >
                     <span>View All</span>
                     <ArrowRight className="h-3 w-3" />
@@ -578,7 +578,7 @@ const AdminDashboardPage: React.FC = () => {
                     <tbody className="divide-y divide-gray-50 text-xs">
                       {recentEnquiries.map((item) => (
                         <tr key={item.id} className="hover:bg-gray-50/80 transition-colors">
-                          <td className="py-3 font-semibold text-[#0D225C]">
+                          <td className="py-3 font-semibold text-[#2e3192]">
                             {item.student_name}
                             <span className="block text-[10px] font-normal text-gray-400">
                               {new Date(item.created_at).toLocaleDateString()}
@@ -612,7 +612,7 @@ const AdminDashboardPage: React.FC = () => {
                             <select
                               value={item.status}
                               onChange={(e) => updateEnquiryStatus(item.id, e.target.value)}
-                              className="text-[11px] font-medium bg-gray-50 border border-gray-200 rounded-lg px-2 py-1 text-gray-700 focus:ring-1 focus:ring-[#CCB156] outline-none"
+                              className="text-[11px] font-medium bg-gray-50 border border-gray-200 rounded-lg px-2 py-1 text-gray-700 focus:ring-1 focus:ring-[#fdb913] outline-none"
                             >
                               <option value="pending">Pending</option>
                               <option value="contacted">Contacted</option>
@@ -633,7 +633,7 @@ const AdminDashboardPage: React.FC = () => {
           <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between space-y-6">
             <div>
               <div className="flex items-center justify-between pb-3 border-b border-gray-100">
-                <h3 className="text-base font-bold text-[#0D225C]">Faculty Distribution</h3>
+                <h3 className="text-base font-bold text-[#2e3192]">Faculty Distribution</h3>
                 <span className="text-xs text-gray-400">By Program</span>
               </div>
 
@@ -666,11 +666,11 @@ const AdminDashboardPage: React.FC = () => {
             </div>
 
             {/* Quick Live DB Health Card */}
-            <div className="bg-[#0D225C]/5 rounded-xl p-4 border border-[#0D225C]/10">
+            <div className="bg-[#2e3192]/5 rounded-xl p-4 border border-[#2e3192]/10">
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center space-x-2">
-                  <Database className="h-4 w-4 text-[#0D225C]" />
-                  <span className="text-xs font-bold text-[#0D225C]">MySQL Connection</span>
+                  <Database className="h-4 w-4 text-[#2e3192]" />
+                  <span className="text-xs font-bold text-[#2e3192]">MySQL Connection</span>
                 </div>
                 <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
                   dbHealth?.connection ? 'bg-green-100 text-green-800' : 'bg-amber-100 text-amber-800'
@@ -683,7 +683,7 @@ const AdminDashboardPage: React.FC = () => {
               </p>
               <button
                 onClick={() => setShowDbModal(true)}
-                className="mt-2.5 w-full text-center text-xs font-bold text-[#0D225C] hover:text-[#CCB156] bg-white border border-gray-200 py-1.5 rounded-lg transition-colors"
+                className="mt-2.5 w-full text-center text-xs font-bold text-[#2e3192] hover:text-[#fdb913] bg-white border border-gray-200 py-1.5 rounded-lg transition-colors"
               >
                 Inspect Schema & Tables
               </button>
@@ -695,14 +695,14 @@ const AdminDashboardPage: React.FC = () => {
         {showDbModal && (
           <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in">
             <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-gray-100">
-              <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-[#0D225C] text-white rounded-t-2xl">
+              <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-[#2e3192] text-white rounded-t-2xl">
                 <div className="flex items-center space-x-3">
-                  <div className="h-9 w-9 bg-[#CCB156] text-[#0D225C] rounded-xl flex items-center justify-center">
+                  <div className="h-9 w-9 bg-[#fdb913] text-[#2e3192] rounded-xl flex items-center justify-center">
                     <Database className="h-5 w-5" />
                   </div>
                   <div>
                     <h3 className="text-base font-bold">Database Health & Schema Diagnostic</h3>
-                    <p className="text-xs text-[#CCB156]">Production Database Status</p>
+                    <p className="text-xs text-[#fdb913]">Production Database Status</p>
                   </div>
                 </div>
                 <button
@@ -731,19 +731,19 @@ const AdminDashboardPage: React.FC = () => {
                   </div>
                   <div className="bg-gray-50 p-3 rounded-xl border border-gray-100">
                     <span className="text-[10px] text-gray-500 uppercase font-semibold">Database</span>
-                    <p className="text-sm font-bold text-[#0D225C] mt-0.5 truncate">
+                    <p className="text-sm font-bold text-[#2e3192] mt-0.5 truncate">
                       {dbHealth?.database_config?.database || 'pbs_admin_portal'}
                     </p>
                   </div>
                   <div className="bg-gray-50 p-3 rounded-xl border border-gray-100">
                     <span className="text-[10px] text-gray-500 uppercase font-semibold">Latency</span>
-                    <p className="text-sm font-bold text-[#0D225C] mt-0.5">
+                    <p className="text-sm font-bold text-[#2e3192] mt-0.5">
                       {dbHealth?.latency_ms ? `${dbHealth.latency_ms} ms` : '< 5 ms'}
                     </p>
                   </div>
                   <div className="bg-gray-50 p-3 rounded-xl border border-gray-100">
                     <span className="text-[10px] text-gray-500 uppercase font-semibold">Tables</span>
-                    <p className="text-sm font-bold text-[#0D225C] mt-0.5">
+                    <p className="text-sm font-bold text-[#2e3192] mt-0.5">
                       {dbHealth?.summary?.tables_found ?? 8} / 8
                     </p>
                   </div>
@@ -751,7 +751,7 @@ const AdminDashboardPage: React.FC = () => {
 
                 {/* Tables Breakdown */}
                 <div>
-                  <h4 className="text-xs font-bold text-[#0D225C] uppercase tracking-wider mb-3">
+                  <h4 className="text-xs font-bold text-[#2e3192] uppercase tracking-wider mb-3">
                     Active Tables & Live Row Counts
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
@@ -790,7 +790,7 @@ const AdminDashboardPage: React.FC = () => {
                     type="button"
                     onClick={runSafeMigration}
                     disabled={isMigrating}
-                    className="px-4 py-2 bg-[#0D225C] text-white rounded-xl text-xs font-bold hover:bg-[#0D225C]/90 transition-colors flex items-center space-x-2 disabled:opacity-50"
+                    className="px-4 py-2 bg-[#2e3192] text-white rounded-xl text-xs font-bold hover:bg-[#2e3192]/90 transition-colors flex items-center space-x-2 disabled:opacity-50"
                   >
                     <RefreshCw className={`h-3.5 w-3.5 ${isMigrating ? 'animate-spin' : ''}`} />
                     <span>{isMigrating ? 'Running...' : 'Run Safe Schema Verification'}</span>
