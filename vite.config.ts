@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/BSchool/', // Base URL for deployment under <Domain>/BSchool
+  base: process.env.VITE_BASE_PATH || '/',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
